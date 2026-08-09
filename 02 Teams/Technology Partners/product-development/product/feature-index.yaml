@@ -1,0 +1,58 @@
+# Feature index — Technology Partners Squad
+# Maps every feature to all related artifacts in one lookup.
+# Delivery tracking via Jira (board MP, confirmed 2026-07-08), Slack (#b-team-integrations),
+# and Confluence (INTEGRATE space).
+# Last updated: 2026-08-04
+
+features:
+  - name: "Integration Abstraction Layer (IAL)"
+    initiative: "Integrations Marketplace"
+    status: "🟡 In progress — pilot adapter target (2026-06-30) now 3 weeks overdue, unconfirmed"
+    owner: "Bas van Reeuwijk"
+    last_signal: "2026-07-21 — no signal from Jira, Slack, or Confluence for a third consecutive weekly cycle; 2026-06-30 pilot-adapter milestone remains unconfirmed as complete or slipped. (Source: absence of signal, cross-checked Jira/Slack/Confluence)"
+    artifacts:
+      prd: "[TO COMPLETE]"
+      rfc: "product-development/engineering/RFCs/2025-11-27-integration-abstraction-layer-rfc.md"
+      jira_epic: "[TO COMPLETE — no Jira board configured]"
+      figma: "[TO COMPLETE]"
+      metrics: "Partner onboarding time -50%, core adapter availability >99.9%, MTTR <15min"
+      confluence: "https://bynder.atlassian.net/wiki/spaces/INTEGRATE/pages/5675221021"
+
+  - name: "Integration Certification Program"
+    initiative: "Integrations Marketplace"
+    status: "🟡 In progress — rolling out to partners; certification queue still growing (Vista Social added 2026-07-24)"
+    owner: "Bas van Reeuwijk"
+    last_signal: "2026-08-04 — direct Jira lookup confirms no change since 2026-07-24: MP-264 (Vista Social) still Awaiting Certification, MP-82 epic still Backlog (untouched since 2025-10-07). Correction: Pencil.ai (MP-249) was previously recorded as unchanged since 2026-07-01 (4 weeks) — live Jira 'updated' field shows 2026-07-13, so it is actually ~3 weeks stalled in Awaiting Certification, not 4; prior cycle's date appears to have used the issue's created date rather than updated date."
+    artifacts:
+      prd: "[TO COMPLETE]"
+      rfc: "[TO COMPLETE]"
+      jira_epic: "MP-82 (Integration Certification Program) — confirmed 2026-07-20, first certification request (MP-262) parented directly to this epic; broader partner-certification workflow issues still live under Release Q3.2 (2026) / MP-253"
+      figma: "[TO COMPLETE]"
+      metrics: "Certified integrations earn Blue Checkmark + higher search ranking on marketplace"
+      confluence: "https://bynder.atlassian.net/wiki/spaces/INTEGRATE/pages/5534351403"
+
+  - name: "Marketplace Documentation Migration"
+    initiative: "Integrations Marketplace"
+    status: "🟢 In progress — Release Q3.1 (2026) wave shipped; next wave pending"
+    owner: "Bas van Reeuwijk"
+    last_signal: "2026-07-13 (Jira board MP) — Release Q3.1 (2026) epic (MP-242) moved to Done, closing the 5-partner doc migration wave (VNTANA MP-250, MessageGears MP-248, Xperience by Kentico/Actum Digital MP-20, Caimera MP-252, ConnectingTheDots MP-256) reported released 2026-07-08–10. Verified via direct Jira issue lookup since this epic fell outside the current 7-day rolling search window."
+    artifacts:
+      prd: "[TO COMPLETE]"
+      rfc: "[TO COMPLETE]"
+      jira_epic: "MP-242 (Release Q3.1 (2026)) — Done as of 2026-07-13; next doc-migration wave epic not yet identified"
+      figma: "[TO COMPLETE]"
+      metrics: "[TO COMPLETE]"
+      confluence: "[TO COMPLETE]"
+
+  - name: "Partner Onboarding Process"
+    initiative: "Integrations Marketplace"
+    status: "🟢 Active — 5 partner connectors released this week"
+    owner: "Bas van Reeuwijk"
+    last_signal: "2026-08-03 (Confluence, Partner Integrations & Connectors page, edited by Bas van Reeuwijk) — Asset Uploader (Gournay Consulting), ButterCMS, Drupal (MDSystems), Inriver (Ntara), and Salsify (Lettuce) all moved IN REVIEW -> RELEASED; new partner connector added to tracker: Brandfolder Migration Tool (Gournay Consulting), IN REVIEW, targeting August 2026."
+    artifacts:
+      prd: "[TO COMPLETE]"
+      rfc: "[TO COMPLETE]"
+      jira_epic: "[TO COMPLETE — no Jira board configured]"
+      figma: "[TO COMPLETE]"
+      metrics: "[TO COMPLETE]"
+      confluence: "https://bynder.atlassian.net/wiki/spaces/INTEGRATE/pages/1920630816"

@@ -1,0 +1,169 @@
+# Feature index — Connectors squad
+# Maps every feature to all related artifacts in one lookup.
+# Source: Jira INC board (pulled 2026-06-20)
+# Update whenever a new feature is added, an artifact is created, or a feature ships.
+
+features:
+
+  # ── IN PROGRESS ──────────────────────────────────────────────────────────────
+
+  - name: "SAP Integration Hub"
+    initiative: "Integrations Marketplace"
+    status: "✅ Shipped"
+    owner: "Unassigned"
+    artifacts:
+      prd: "[TO COMPLETE]"
+      rfc: "[TO COMPLETE]"
+      jira_epic: "INC-1235"
+      figma: "[TO COMPLETE]"
+      metrics: "PENDING"
+      customer_context: "[TO COMPLETE]"
+
+  - name: "New i-Hub solution: Braze"
+    initiative: "Integrations Marketplace"
+    status: "🔵 In progress"
+    owner: "Unassigned"
+    artifacts:
+      prd: "[TO COMPLETE]"
+      rfc: "[TO COMPLETE]"
+      jira_epic: "INC-1239"
+      figma: "[TO COMPLETE]"
+      metrics: "PENDING"
+      customer_context: "[TO COMPLETE]"
+
+  - name: "Vimeo Automation POC"
+    initiative: "Integrations Marketplace"
+    status: "✅ Shipped"
+    owner: "Unassigned"
+    artifacts:
+      prd: "[TO COMPLETE]"
+      rfc: "[TO COMPLETE]"
+      jira_epic: "INC-1236"
+      figma: "[TO COMPLETE]"
+      metrics: "PENDING"
+      customer_context: "[TO COMPLETE]"
+
+  - name: "Bynder Extended Application Storage for Tray [BEAST] Q2 2026"
+    initiative: "Integrations Marketplace"
+    status: "✅ Shipped"
+    owner: "Bill Keiffer"
+    artifacts:
+      prd: "[TO COMPLETE]"
+      rfc: "[TO COMPLETE]"
+      jira_epic: "INC-1241"
+      figma: "[TO COMPLETE]"
+      metrics: "PENDING"
+      customer_context: "[TO COMPLETE]"
+
+  # ── Q3 2026 PLANNED ───────────────────────────────────────────────────────────
+
+  - name: "Zyng Connector - Q3 2026"
+    initiative: "Integrations Marketplace"
+    status: "🔵 In progress"
+    owner: "Unassigned"
+    artifacts:
+      prd: "[TO COMPLETE]"
+      jira_epic: "INC-1339"
+      figma: "[TO COMPLETE]"
+      metrics: "PENDING"
+      customer_context: "[TO COMPLETE]"
+
+  - name: "Update Unsplash Connector (Collections support)"
+    initiative: "Integrations Marketplace"
+    status: "🔵 In progress"
+    owner: "Unassigned"
+    artifacts:
+      prd: "[TO COMPLETE]"
+      jira_epic: "INC-1338"
+      figma: "[TO COMPLETE]"
+      metrics: "PENDING"
+      customer_context: "[TO COMPLETE]"
+
+  - name: "Vimeo POC - Q3 2026"
+    initiative: "Integrations Marketplace"
+    status: "🔵 Planned Q3 2026"
+    owner: "Unassigned"
+    artifacts:
+      prd: "[TO COMPLETE]"
+      jira_epic: "INC-1337"
+      figma: "[TO COMPLETE]"
+      metrics: "PENDING"
+      customer_context: "[TO COMPLETE]"
+
+  - name: "Braze Integration POC - Q3 2026"
+    initiative: "Integrations Marketplace"
+    status: "🔵 Planned Q3 2026"
+    owner: "Unassigned"
+    artifacts:
+      prd: "[TO COMPLETE]"
+      jira_epic: "INC-1335"
+      figma: "[TO COMPLETE]"
+      metrics: "PENDING"
+      customer_context: "[TO COMPLETE]"
+
+  # ── BACKLOG ───────────────────────────────────────────────────────────────────
+
+  - name: "Oracle Eloqua"
+    initiative: "Integrations Marketplace"
+    status: "⏸ Backlog"
+    owner: "Unassigned"
+    artifacts:
+      jira_epic: "INC-677"
+
+  - name: "OneDrive Improvements"
+    initiative: "Integrations Marketplace"
+    status: "⏸ Backlog"
+    owner: "Unassigned"
+    artifacts:
+      jira_epic: "INC-867"
+
+  - name: "Bi-directional project management updates"
+    initiative: "Integrations Marketplace"
+    status: "⏸ Backlog"
+    owner: "Unassigned"
+    artifacts:
+      jira_epic: "INC-889"
+
+  - name: "Metaproperty enrichment"
+    initiative: "Integrations Marketplace"
+    status: "⏸ Backlog"
+    owner: "Unassigned"
+    artifacts:
+      jira_epic: "INC-890"
+
+  - name: "Technical Debt and Maintenance"
+    initiative: "Integrations Marketplace"
+    status: "⏸ Backlog"
+    owner: "Unassigned"
+    artifacts:
+      jira_epic: "INC-451"
+
+  - name: "Task Usage Innovation"
+    initiative: "Integrations Marketplace"
+    status: "⏸ Backlog"
+    owner: "Unassigned"
+    artifacts:
+      jira_epic: "INC-965"
+
+  # ── RECENTLY SHIPPED ─────────────────────────────────────────────────────────
+
+  - name: "Bynder Extended Application Storage for Tray [BEAST]"
+    initiative: "Integrations Marketplace"
+    status: "✅ Shipped"
+    owner: "Bill Keiffer"
+    artifacts:
+      jira_epic: "INC-1142"
+
+  - name: "PIM Automation via Tray Connectivity API"
+    initiative: "Integrations Marketplace"
+    status: "✅ Shipped"
+    owner: "Unassigned"
+    artifacts:
+      jira_epic: "INC-1198"
+
+  - name: "i-Hub: Frame.io Automation"
+    initiative: "Integrations Marketplace"
+    status: "✅ Shipped"
+    owner: "Bill Keiffer"
+    artifacts:
+      jira_epic: "INC-1196"

@@ -1,0 +1,166 @@
+# Feature index — Integrations Squad
+# Jira board: API (https://bynder.atlassian.net/jira/software/projects/API/boards)
+# Last seeded: 2026-06-19 via squad-content-seed
+# Update: when a new epic starts, when an artifact is created, or when a feature ships
+
+features:
+
+  # ── AI / Agentic track (API Extensibility — forward-looking) ──────────────
+  - name: "AI Native Adoption & Implementation"
+    initiative: "API Extensibility"
+    status: "🟡 In progress"
+    owner: "Todd Willms"
+    artifacts:
+      prd: "product-development/product/PRDs/api-extensibility/ai-native-adoption-prd.md"
+      rfc: "[TO COMPLETE]"
+      jira_epic: "API-2743"
+      figma: "[TO COMPLETE]"
+      metrics: "PENDING"
+      customer_context: "[TO COMPLETE]"
+
+  - name: "Agentic SDK Implementation"
+    initiative: "API Extensibility"
+    status: "🔵 Planning"
+    owner: "Todd Willms"
+    artifacts:
+      prd: "product-development/product/PRDs/api-extensibility/agentic-sdk-prd.md"
+      rfc: "[TO COMPLETE]"
+      jira_epic: "API-2744"
+      figma: "[TO COMPLETE]"
+      metrics: "PENDING"
+      customer_context: "[TO COMPLETE]"
+
+  - name: "GenAI POC for the UCV"
+    initiative: "API Extensibility"
+    status: "🟡 In progress"
+    owner: "[TO COMPLETE]"
+    artifacts:
+      prd: "[TO COMPLETE]"
+      rfc: "[TO COMPLETE]"
+      jira_epic: "API-2741"
+      figma: "[TO COMPLETE]"
+      metrics: "PENDING"
+      customer_context: "[TO COMPLETE]"
+
+  # ── UCV (Universal Content Viewer) track ─────────────────────────────────
+  - name: "Minor UCV UX/UI Gaps (Q1 2026)"
+    initiative: "API Extensibility"
+    status: "🟡 In progress"
+    owner: "Todd Willms"
+    artifacts:
+      prd: "product-development/product/PRDs/api-extensibility/ucv-prd.md"
+      rfc: "[TO COMPLETE]"
+      jira_epic: "API-2454"
+      figma: "product-development/design/figma-index.md"
+      metrics: "PENDING"
+      customer_context: "[TO COMPLETE]"
+
+  - name: "Mono-Repo for UCV Regular/Lite"
+    initiative: "API Extensibility"
+    status: "✅ Shipped"
+    owner: "[TO COMPLETE]"
+    artifacts:
+      prd: "[TO COMPLETE]"
+      rfc: "product-development/engineering/RFCs/ucv-mono-repo-rfc.md"
+      jira_epic: "API-2459"
+      figma: "[TO COMPLETE]"
+      metrics: "PENDING"
+      customer_context: "[TO COMPLETE]"
+
+  - name: "Legacy UCV Compact View Deprecation"
+    initiative: "API Extensibility"
+    status: "✅ Shipped"
+    owner: "[TO COMPLETE]"
+    artifacts:
+      prd: "[TO COMPLETE]"
+      rfc: "product-development/engineering/RFCs/ucv-compact-deprecation-rfc.md"
+      jira_epic: "API-2677"
+      figma: "[TO COMPLETE]"
+      metrics: "PENDING"
+      customer_context: "[TO COMPLETE]"
+
+  - name: "UCV Add Telemetry and Logging Capabilities"
+    initiative: "API Extensibility"
+    status: "🔵 Planning"
+    owner: "[TO COMPLETE]"
+    artifacts:
+      prd: "[TO COMPLETE]"
+      rfc: "[TO COMPLETE]"
+      jira_epic: "API-2742"
+      figma: "[TO COMPLETE]"
+      metrics: "PENDING"
+      customer_context: "[TO COMPLETE]"
+
+  # ── Webhooks track ────────────────────────────────────────────────────────
+  - name: "Webhooks Legacy Events Improvements Part 1"
+    initiative: "API Extensibility"
+    status: "🔴 Blocked"
+    owner: "[TO COMPLETE]"
+    artifacts:
+      prd: "[TO COMPLETE]"
+      rfc: "[TO COMPLETE]"
+      jira_epic: "API-2624"
+      figma: "[TO COMPLETE]"
+      metrics: "PENDING"
+      customer_context: "[TO COMPLETE]"
+
+  - name: "Webhooks Asset Legacy Events Improvements Part 2"
+    initiative: "API Extensibility"
+    status: "🟡 In progress"
+    owner: "[TO COMPLETE]"
+    artifacts:
+      prd: "[TO COMPLETE]"
+      rfc: "[TO COMPLETE]"
+      jira_epic: "API-2670"
+      figma: "[TO COMPLETE]"
+      metrics: "PENDING"
+      customer_context: "[TO COMPLETE]"
+
+  - name: "Implement DAT Link Generated Event in Webhooks"
+    initiative: "API Extensibility"
+    status: "🟡 In progress"
+    owner: "[TO COMPLETE]"
+    artifacts:
+      prd: "[TO COMPLETE]"
+      rfc: "[TO COMPLETE]"
+      jira_epic: "API-2534"
+      figma: "[TO COMPLETE]"
+      metrics: "PENDING"
+      customer_context: "[TO COMPLETE]"
+
+  - name: "Webhooks: Content Type Override for JSON"
+    initiative: "API Extensibility"
+    status: "🔵 Planning"
+    owner: "Dennis Ku"
+    artifacts:
+      prd: "[TO COMPLETE]"
+      rfc: "[TO COMPLETE]"
+      jira_epic: "API-2472"
+      figma: "[TO COMPLETE]"
+      metrics: "PENDING"
+      customer_context: "[TO COMPLETE]"
+
+  # ── Technical / infrastructure ────────────────────────────────────────────
+  - name: "Decommission Legacy ReasonML GraphQL Service"
+    initiative: "API Extensibility"
+    status: "✅ Shipped"
+    owner: "[TO COMPLETE]"
+    artifacts:
+      prd: "[TO COMPLETE]"
+      rfc: "product-development/engineering/RFCs/graphql-decommission-rfc.md"
+      jira_epic: "API-2614"
+      figma: "[TO COMPLETE]"
+      metrics: "PENDING"
+      customer_context: "[TO COMPLETE]"
+
+  - name: "Deprecate OAuth1 Token Usage"
+    initiative: "API Extensibility"
+    status: "🔵 Planning"
+    owner: "[TO COMPLETE]"
+    artifacts:
+      prd: "[TO COMPLETE]"
+      rfc: "product-development/engineering/RFCs/oauth1-deprecation-rfc.md"
+      jira_epic: "API-2463"
+      figma: "[TO COMPLETE]"
+      metrics: "PENDING"
+      customer_context: "[TO COMPLETE]"
