@@ -1,13 +1,15 @@
 name: Routine A -- connectors-squad weekly synthesis
 
-# PILOT CUTOVER (2026-08-09): workflow_dispatch only, no schedule yet. This is the
-# validation step before the cron is turned on and the old connectors-squad-kb
-# workflow is deleted -- see distr-team-kb... no, dev-tools-integrations-marketplace-kb
-# consolidation notes. Do not add a schedule here until a live workflow_dispatch run
-# has been confirmed to push a correctly-pathed branch into 02 Teams/Connectors/.
+# LIVE CUTOVER (2026-08-14): pilot validated (Routine A push confirmed working across
+# multiple runs, credential fix validated, Routine A2 mechanically validated -- see
+# commit history). Cron enabled to match connectors-squad-kb's prior deterministic
+# slot exactly; connectors-squad-kb's own routine-a-weekly-synthesis.yml is deleted
+# in the same change so there is no window where both are live.
 
 on:
-  workflow_dispatch:       # Manual trigger only, for the pilot test
+  schedule:
+    - cron: '0 7 * * 2'  # 07:00 UTC Tuesdays -- same deterministic slot connectors-squad-kb used
+  workflow_dispatch:       # Manual trigger retained for testing
 
 jobs:
   weekly-synthesis:
