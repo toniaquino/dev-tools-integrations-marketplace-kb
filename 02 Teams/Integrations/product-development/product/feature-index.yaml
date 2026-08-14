@@ -81,7 +81,7 @@ features:
 
   - name: "UCV Add Telemetry and Logging Capabilities"
     initiative: "API Extensibility"
-    status: "🔵 Planning"
+    status: "🟡 In progress"
     owner: "[TO COMPLETE]"
     artifacts:
       prd: "[TO COMPLETE]"
