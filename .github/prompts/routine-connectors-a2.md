@@ -70,8 +70,13 @@ Access patterns:
   to find the pushed branch.
 - **GitHub (open the PR, once confirmed):**
   `POST https://api.github.com/repos/toniaquino/dev-tools-integrations-marketplace-kb/pulls` (Bearer
-  `$GH_PAT`) with `draft:true`, `head:<branch>`, `base:main`, `title`, `body`; then
-  `POST .../pulls/{number}/requested_reviewers` with `{"reviewers":["toniaquino"]}`.
+  `$GH_PAT`) with `draft:true`, `head:<branch>`, `base:main`, `title`, `body`. Do not
+  attempt a `requested_reviewers` call afterward -- `GH_PAT` authenticates as
+  `toniaquino`, the same identity that authors the PR, and GitHub rejects a
+  self-review request outright (this is a platform rule, not a permissions gap that
+  can be fixed by reconfiguring the token). The Phase 3 DM to the PM, which includes
+  the PR URL, is the actual "please look at this" signal -- it doesn't depend on
+  collaborator status the way a reviewer request would.
 
 Confirm `"ok": true` (Slack) / HTTP 2xx (GitHub) before treating a call as successful.
 
@@ -188,16 +193,9 @@ human clarification, not silence, and must not be treated as agreement.
      https://api.github.com/repos/toniaquino/dev-tools-integrations-marketplace-kb/pulls \
      -d '{"title":"Routine A: weekly synthesis [YYYY-MM-DD]","head":"<branch>","base":"main","body":"[body from steps 1-2 above]","draft":true}')
    ```
-4. Extract the PR number and add `toniaquino` as reviewer:
-   ```
-   PR_NUMBER=$(echo "$PR_RESPONSE" | grep -o '"number":[0-9]*' | head -1 | grep -o '[0-9]*')
-   curl -s -X POST \
-     -H "Authorization: Bearer $GH_PAT" \
-     -H "Accept: application/vnd.github+json" \
-     https://api.github.com/repos/toniaquino/dev-tools-integrations-marketplace-kb/pulls/$PR_NUMBER/requested_reviewers \
-     -d '{"reviewers":["toniaquino"]}'
-   ```
-5. Reply in the Slack thread:
+   Do not follow up with a `requested_reviewers` call -- see the reviewer note under
+   Access patterns above. The Phase 3 DM is the notification.
+4. Reply in the Slack thread:
    - Confirmed via 👍 only: `Opened the PR as confirmed: [PR URL]`
    - No response within 36h: `No response in 36h, opening the PR as proposed: [PR URL]`
    - Correction folded in: `Got it — opened the PR with your correction folded in: [PR URL]`
