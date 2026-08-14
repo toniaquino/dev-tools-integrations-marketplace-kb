@@ -21,7 +21,7 @@ features:
 
   - name: "New i-Hub solution: Braze"
     initiative: "Integrations Marketplace"
-    status: "🔵 In progress"
+    status: "✅ Shipped"
     owner: "Unassigned"
     artifacts:
       prd: "[TO COMPLETE]"
