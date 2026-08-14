@@ -1,12 +1,17 @@
 name: Routine A2 -- connectors-squad weekly synthesis reply processing
 
-# PILOT CUTOVER (2026-08-09): workflow_dispatch only, no schedule yet -- see
-# routine-connectors-a-weekly-synthesis.yml's note. Do not add a schedule until
-# Routine A's manual test is confirmed and this one has been manually validated
-# against a real pushed branch too.
+# LIVE CUTOVER (2026-08-14): see routine-connectors-a-weekly-synthesis.yml's note.
+# Cron enabled to match connectors-squad-kb's prior deterministic slot exactly;
+# connectors-squad-kb's own routine-a2-reply-processing.yml is deleted in the same
+# change. One known open item: this pilot's A2 run only exercised the
+# no-thread-found fallback path, not a real thread match against a live
+# notification -- worth a close look the first time the real Tuesday/Wednesday
+# cycle completes on this schedule.
 
 on:
-  workflow_dispatch:       # Manual trigger only, for the pilot test
+  schedule:
+    - cron: '0 19 * * 3'  # 19:00 UTC Wednesdays -- 36h after Tuesday's Pass 1, same slot connectors-squad-kb used
+  workflow_dispatch:       # Manual trigger retained for testing
 
 jobs:
   reply-processing:
