@@ -1,0 +1,25 @@
+name: Routine A -- integrations-squad weekly synthesis
+
+# PILOT CUTOVER (2026-08-14): workflow_dispatch only, no schedule yet. Same pattern
+# as the Connectors pilot (now live). Do not add a schedule here until a live
+# workflow_dispatch run has been confirmed to push a correctly-pathed branch into
+# 02 Teams/Integrations/, and Routine A2 has been validated too.
+
+on:
+  workflow_dispatch:       # Manual trigger only, for the pilot test
+
+jobs:
+  weekly-synthesis:
+    uses: toni-aq/workflows/.github/workflows/reusable-routine-runner.yml@main
+    with:
+      repo_name: dev-tools-integrations-marketplace-kb
+      prompt_path: .github/prompts/routine-integrations-a.md
+      model: claude-sonnet-5
+      job_display_name: "integrations weekly synthesis"
+    secrets:
+      ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+      GH_PAT: ${{ secrets.GH_PAT }}
+      ATLASSIAN_API_TOKEN: ${{ secrets.ATLASSIAN_API_TOKEN }}
+      ATLASSIAN_EMAIL: ${{ secrets.ATLASSIAN_EMAIL }}
+      SLACK_BOT_TOKEN: ${{ secrets.SLACK_BOT_TOKEN }}
+      DRY_RUN: ${{ secrets.DRY_RUN }}
