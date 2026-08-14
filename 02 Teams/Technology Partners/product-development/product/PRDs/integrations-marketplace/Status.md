@@ -1,72 +1,79 @@
 # Integrations Marketplace -- status
 
-**Last updated:** 2026-08-04
+**Last updated:** 2026-08-14
 **PM:** Bas van Reeuwijk
 **Status:** 🟡
 
 ## This week
 
-- **Partner Onboarding:** Real movement this week. The Confluence "Partner Integrations
-  & Connectors" page (linked feature page) was edited 2026-08-03 by Bas van Reeuwijk --
-  five partner connectors moved from IN REVIEW to RELEASED: Asset Uploader (Gournay
-  Consulting), ButterCMS, Drupal (MDSystems), Inriver (Ntara), and Salsify (Lettuce). A
-  new partner connector was also added to the tracker: Brandfolder Migration Tool
-  (Gournay Consulting), status IN REVIEW, targeting August 2026. *(Source: Confluence
-  INTEGRATE space, page 1920630816, diffed v300 -> v301)*
-- **Certification Program:** No new Jira activity this week (0 MP issues updated in the
-  7-day window). Direct issue lookups confirm MP-264 (Vista Social) unchanged since
-  2026-07-24 (Awaiting Certification) and MP-82 epic unchanged since 2025-10-07
-  (Backlog). *(Source: Jira board MP)*
-- **Certification Program (correction):** Pencil.ai (MP-249) was recorded last cycle as
-  stalled "since 2026-07-01 (4 weeks)." A direct Jira lookup this cycle shows the
-  issue's actual `updated` timestamp is 2026-07-13, not 2026-07-01 -- so it is stalled
-  in Awaiting Certification for ~3 weeks, not 4. Prior cycle appears to have used the
-  issue's created date. Corrected in feature-index.yaml this cycle. *(Source: Jira
-  board MP, direct issue lookup)*
-- **Doc Migration:** No new activity this week. Release Q3.1 (2026) (MP-242, Done
-  2026-07-13) remains the last confirmed wave; next wave epic still not identified.
-  *(Source: Jira board MP -- absence of new signal)*
-- **Integration Abstraction Layer:** No signal from any source for a fifth consecutive
-  cycle. The pilot-adapter milestone (target 2026-06-30) is now 5 weeks overdue with
-  nothing confirming completion or slippage -- still a flagged risk, not a confirmed
-  miss. *(Source: absence of signal, cross-checked across Jira/Slack/Confluence)*
-- **Slack:** Both channels scanned successfully this week, including
-  #b-help-global-partnerships, which was unreadable for the prior two cycles (flagged
-  2026-07-20 and 2026-07-28) -- that data-source gap appears resolved. All messages in
-  both channels were partner-support/customer-escalation threads (Monday.com asset-size
-  limits, SFCC staging-environment question, Getty partial-upload question, Drupal
-  media-field and asset-title-length bugs, LinkrUI license-visibility question,
-  Syndigo/Salsify automation questions, Workfront zip-file question, Veriflies pricing
-  question, Kentico integration-ownership question, partner-lead referrals) -- no
-  PM-level decisions logged for the four tracked features. *(Source: Slack
-  #b-team-integrations, #b-help-global-partnerships)*
+- **Doc Migration -- next wave now confirmed in progress:** Bas van Reeuwijk corrected
+  Jira descriptions for three Release Q3.2 partner integrations against their original
+  intake forms on 2026-08-11 -- FADEL (MP-257) was previously misattributed to "The DAM
+  Consultants" as implementation partner, corrected to Gournay Consulting; FLUiiD4
+  (MP-260)'s description didn't match the submitted intake and was rewritten;
+  Brandfolder Migration Tool (MP-258) went from no description to a full one. Each
+  ticket also gained a linked Confluence page. This was followed by a much larger
+  sweep: 143 pages across the INTEGRATE space were rewritten/restructured by Bas van
+  Reeuwijk in a single ~2.5-hour session on 2026-08-13 (13:22-15:55 CEST), standardizing
+  partner-page templates (structured status badges, disambiguation entries for
+  same-named integrations, richer partner/commercial/onboarding sections). No Jira epic
+  currently tracks this wave -- the prior wave was MP-242 (Done 2026-07-13); this one so
+  far exists only as direct page/ticket edits. *(Source: Jira board MP -- MP-257,
+  MP-258, MP-260 changelogs; Confluence INTEGRATE space, 143 pages diffed by version)*
+- **Certification pipeline -- active movement on Release Q3.2 (MP-253):** Corsearch
+  (MP-254) advanced Training Material Complete -> Awaiting Release (2026-08-12), the
+  closest item in the current wave to shipping. Fadel/Gournay Consulting (MP-257)
+  reached Training Material Complete (2026-08-11). Brandfolder Migration Tool (MP-258)
+  and Fluiid4/CLX Europe (MP-260) both entered Awaiting Certification (2026-08-11) --
+  Brandfolder had been IN REVIEW per last week's Confluence signal, so Jira now shows it
+  a step further along. *(Source: Jira board MP)*
+- **New release wave opened -- Q4.1 (2026):** Epic MP-259 appeared with its first
+  entrant, the Bynder-CloudCannon integration (MP-267), which moved Backlog -> Awaiting
+  Certification on 2026-08-13. *(Source: Jira board MP)*
+- **Pencil.ai (MP-249) unparented from Release Q3.2:** Still Awaiting Certification
+  (unchanged since 2026-07-13, ~4.5 weeks stalled), but its Jira parent link to MP-253
+  was removed by Bas van Reeuwijk on 2026-08-12. Reason not stated in Jira -- flagged
+  below, needs a PM check. *(Source: Jira board MP, issue changelog)*
+- **Integration Abstraction Layer:** No signal from any source again this cycle -- none
+  of the 7 Jira issues updated this week relate to IAL, no Slack mentions, and the IAL
+  blueprint/RFC Confluence page was not among the 143 pages touched this week. Streak
+  continues from 2026-07-21; the 2026-06-30 pilot-adapter target is now 6+ weeks
+  overdue, still unconfirmed as complete or slipped. *(Source: absence of signal,
+  cross-checked Jira/Slack/Confluence)*
+- **Slack:** Both channels scanned successfully (25 messages in #b-team-integrations, 2
+  in #b-help-global-partnerships). All were partner-support/customer-escalation threads
+  (Adobe CC/LinkrUI security-certificate issue at WCLC, Hilti webhook/cross-account AWS
+  blocker, ChatGPT OAuth blocker for ABM, MCP access requests, a new Arla lead, and
+  others) -- no PM-level decisions or blockers touching the four tracked features.
+  *(Source: Slack #b-team-integrations, #b-help-global-partnerships)*
 
 ## Blockers
 
-- **IAL pilot-adapter milestone** (target 2026-06-30) now 5 weeks overdue and
+- **IAL pilot-adapter milestone** (target 2026-06-30) now 6+ weeks overdue and
   unconfirmed -- owner: Bas van Reeuwijk.
-- **Pencil.ai (MP-249)** stalled in Awaiting Certification for ~3 weeks (since
-  2026-07-13, corrected from prior cycle's ~4-week figure) -- owner: Bas van Reeuwijk.
+- **Pencil.ai (MP-249)** stalled in Awaiting Certification since 2026-07-13 (~4.5
+  weeks) and now also unparented from Release Q3.2 -- owner: Bas van Reeuwijk. Needs
+  clarification on whether it's being reassigned to a different release wave or
+  deprioritized.
+- **Doc Migration wave has no Jira epic** -- the 143-page Confluence sweep and the
+  three corrected partner tickets aren't tracked under any epic, unlike the Q3.1 wave
+  (MP-242). Recommend opening one so this wave's completeness can be checked the way
+  Q3.1's was.
 
 ## Coming up
 
-- Track the 5 newly RELEASED partner connectors through to certification-queue
-  follow-through, if applicable.
-- Watch Brandfolder Migration Tool (Gournay Consulting) -- newly added to the partner
-  tracker (IN REVIEW, targeting August 2026); also tracked separately in Jira under
-  MP-258 for certification.
-- Bas to confirm actual status of the IAL pilot adapter now that the 2026-06-30 target
-  is 5 weeks overdue without a recorded update.
-- Pencil.ai (MP-249) has been stalled in Awaiting Certification for ~3 weeks -- may need
-  PM follow-up with the partner or a process check.
-- Track Vista Social (MP-264) through certification -- no movement since it opened
-  2026-07-24.
+- Watch Corsearch (MP-254) through to Awaiting Release -> Released -- closest item in
+  the current wave.
+- Track Brandfolder Migration Tool (MP-258) and Fluiid4 (MP-260) through certification
+  now that both have entered Awaiting Certification.
+- Watch the new Q4.1 (2026) wave (MP-259) for further entrants beyond CloudCannon
+  (MP-267).
 
 ## Features
 
 | Feature | Status | Last signal |
 |---|---|---|
-| Integration Abstraction Layer | 🟡 In progress / some risk | No fresher signal since 2026-06-19; Confluence blueprint page unedited since 2025-11-27; 2026-06-30 pilot-adapter target now 5 weeks overdue, unconfirmed |
-| Certification Program | 🟡 In progress / some risk | 2026-08-04 (Jira board MP, direct lookup) -- MP-264 (Vista Social) unchanged since 2026-07-24, Awaiting Certification; MP-249 (Pencil.ai) unchanged since 2026-07-13 (~3 weeks, corrected this cycle) |
-| Doc Migration | 🟢 On track | 2026-07-13 (Jira board MP) -- Release Q3.1 (2026) epic (MP-242) moved to Done, closing the 5-partner doc migration wave; no new wave epic identified yet |
-| Partner Onboarding | 🟢 Active | 2026-08-03 (Confluence, Partner Integrations & Connectors page) -- 5 connectors released, 1 new partner (Brandfolder Migration Tool) added |
+| Integration Abstraction Layer | 🟡 In progress / some risk | No fresher signal since 2026-07-21; 2026-06-30 pilot-adapter target now 6+ weeks overdue, unconfirmed (Source: absence of signal, cross-checked Jira/Slack/Confluence) |
+| Certification Program | 🟡 In progress -- active this week | 2026-08-12 (Jira board MP) -- Corsearch (MP-254) reached Awaiting Release; Fadel (MP-257) reached Training Material Complete; Brandfolder (MP-258) and Fluiid4 (MP-260) entered Awaiting Certification; Pencil.ai (MP-249) still stalled and now unparented from MP-253 |
+| Doc Migration | 🟢 On track -- next wave confirmed in progress | 2026-08-13 (Confluence INTEGRATE space, 143 pages) + 2026-08-11 (Jira MP-257/258/260 description corrections) -- no epic yet tracking this wave |
+| Partner Onboarding | 🟢 Active | 2026-08-03 (Confluence, Partner Integrations & Connectors page) unchanged this week -- only an incidental link-version bump on 2026-08-12 from the wider page rewrite, no new tracker entries |
