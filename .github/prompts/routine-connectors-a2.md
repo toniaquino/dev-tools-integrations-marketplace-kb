@@ -60,7 +60,7 @@ Access patterns:
   with
   `git -C /tmp/dev-tools-integrations-marketplace-kb push https://toniaquino:$GH_PAT@github.com/toniaquino/dev-tools-integrations-marketplace-kb.git <branch>`.
 - **Slack read:** `conversations.replies` (Bearer `$SLACK_BOT_TOKEN`) to fetch thread
-  replies; `conversations.history` on `#distr-team-kb` (channel ID `C0BBHTHRSUC` --
+  replies; `conversations.history` on `#distr-team-kb-log` (channel ID `C0BL0BZQFNX` --
   use this directly, do not resolve the name via `conversations.list`) to locate the
   Tuesday notification message.
 - **Slack write:** `chat.postMessage` for in-thread replies. Tag recipients inline with
@@ -92,7 +92,7 @@ REPO_OWNER:      toniaquino
 REPO_NAME:       dev-tools-integrations-marketplace-kb
 CLONE_PATH:      /tmp/dev-tools-integrations-marketplace-kb
 MAIN_BRANCH:     main
-SLACK_CHANNEL:   #distr-team-kb
+SLACK_CHANNEL:   #distr-team-kb-log
 ```
 
 ---
@@ -113,7 +113,7 @@ branch to process this week" and exit cleanly.
    There should be at most one (this squad's Routine A pushes a single branch per run,
    not per-owner). If more than one exists, use the most recently pushed (by commit
    date).
-2. Read recent `#distr-team-kb` history (`conversations.history`, last ~4 days) to find
+2. Read recent `#distr-team-kb-log` history (`conversations.history`, last ~4 days) to find
    the Tuesday notification message whose body contains that branch's compare URL
    (`https://github.com/toniaquino/dev-tools-integrations-marketplace-kb/compare/main...<branch>`). Use
    that message's `ts` as the thread root.
@@ -123,7 +123,7 @@ If no `weekly-sync/connectors-synthesis-` branch can be found, DM `UPQ9D0BFX`:
 Routine A Actions run before relying on Pass 2." Then exit.
 
 If the branch is found but the notification message cannot be located in
-`#distr-team-kb` history, proceed to Phase 2 anyway using an empty reply set, and note
+`#distr-team-kb-log` history, proceed to Phase 2 anyway using an empty reply set, and note
 this in the Phase 3 summary rather than failing the run.
 
 ## Phase 2: process thread replies
@@ -231,7 +231,7 @@ PR opened: [PR URL, or "not opened — unparseable reply needs clarification, br
 
 - No `weekly-sync/connectors-synthesis-` branch found: DM `UPQ9D0BFX` (see Gate) and exit
   cleanly.
-- Notification message not found in `#distr-team-kb` history: proceed with no replies
+- Notification message not found in `#distr-team-kb-log` history: proceed with no replies
   to process, note it in the Phase 3 summary.
 - Slack thread fetch fails: log it, note it in the Phase 3 summary, do not fail the run.
 - A correction cannot be applied cleanly (merge conflict, file missing): leave the

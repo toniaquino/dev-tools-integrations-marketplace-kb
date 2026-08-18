@@ -14,14 +14,14 @@ team. It defaults to `true`. Read it from the environment before doing anything 
 
 **Squad channel posting policy: this routine never posts to the public squad channel
 (`#api-team`) under any DRY_RUN value.** That channel (and any engineering channel) is
-scanned for data only — never written to. All notifications go to `#distr-team-kb` and
+scanned for data only — never written to. All notifications go to `#distr-team-kb-log` and
 the PM DM, per the Slack notification format below.
 
 - **`DRY_RUN=true` (default):** Do the full scan, analysis, and file generation. Create
   the branch and push it exactly as normal — a pushed branch with no PR yet is safe and
-  does not broadcast to the team. Post to `#distr-team-kb` and send a Slack **DM to the
+  does not broadcast to the team. Post to `#distr-team-kb-log` and send a Slack **DM to the
   PM** (Todd Willms, `U01EHRXEBFE`), both prefixed with `[DRY RUN]`.
-- **`DRY_RUN=false`:** Communicate normally — post to `#distr-team-kb` and DM the PM per
+- **`DRY_RUN=false`:** Communicate normally — post to `#distr-team-kb-log` and DM the PM per
   the steps below. No `[DRY RUN]` prefix. Still never post to `#api-team`.
 
 If `DRY_RUN` is unset or any value other than the exact string `false`, treat it as `true`.
@@ -431,7 +431,7 @@ further sync step.
 
 ## Slack notification format
 
-Post to `#distr-team-kb` (<#C0BBHTHRSUC>) and DM the PM. Never post to `#api-team` — it
+Post to `#distr-team-kb-log` (<#C0BL0BZQFNX>) and DM the PM. Never post to `#api-team` — it
 is scanned for data only, never written to, regardless of DRY_RUN.
 
 There is no PR yet at this point -- link the branch's compare view instead:
@@ -469,7 +469,7 @@ Proposed changes (draft): [compare URL]
 - **Jira unavailable:** proceed with a Slack-only scan. Note it in the PR description.
 - **Slack channel not readable:** log it, skip that area, flag it in the PR description.
 - **No changes detected:** do not push a branch (there is nothing for Routine A2 to open
-  later). Post to `#distr-team-kb` (<#C0BBHTHRSUC>): `No squad changes detected this
+  later). Post to `#distr-team-kb-log` (<#C0BL0BZQFNX>): `No squad changes detected this
   week.` (prefixed `[DRY RUN]` when `DRY_RUN=true`). Never post this to `#api-team`.
 - **Push fails:** DM the PM (`U01EHRXEBFE`) with the generated Status.md content and the
   error details so nothing is lost.
