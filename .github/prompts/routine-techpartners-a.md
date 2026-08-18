@@ -4,7 +4,7 @@
 This routine always does the full scan, writes Status.md, and pushes the branch --
 a pushed branch with no PR yet is safe and does not broadcast to the team. DRY_RUN only
 controls the `[DRY RUN]` prefix on notifications; it never skips branch/commit/push.
-- `DRY_RUN=true`: full run; the `#distr-team-kb` post and the TONI_SLACK_ID DM are both
+- `DRY_RUN=true`: full run; the `#distr-team-kb-log` post and the TONI_SLACK_ID DM are both
   prefixed with `[DRY RUN]`.
 - `DRY_RUN=false` (default): full run; no prefix.
 Always log DRY_RUN value at the start: "Routine A starting. DRY_RUN=[value]."
@@ -333,7 +333,7 @@ For each shipped epic:
 
 If any features are incomplete, list them under "Feature launch completeness" in the PR
 description (Phase 8) and in the Slack notification (Phase 9), same thread as the
-weekly synthesis ask -- do not send a separate DM or a separate `#distr-team-kb` post
+weekly synthesis ask -- do not send a separate DM or a separate `#distr-team-kb-log` post
 for this. A reply supplying the missing info (PRD path, Figma link, customer context,
 etc.) is a correction like any other -- Routine A2 folds it into `feature-index.yaml`
 before opening the PR.
@@ -392,14 +392,14 @@ further sync step.
 
 ## Phase 9 — Slack notification
 
-Post to `#distr-team-kb` (<#C0BBHTHRSUC>) and DM TONI_SLACK_ID. Never post to
+Post to `#distr-team-kb-log` (<#C0BL0BZQFNX>) and DM TONI_SLACK_ID. Never post to
 `#b-team-integrations` or `#b-help-global-partnerships` under any DRY_RUN value — those
 channels are scanned for data only (Phase 1), never written to.
 
 There is no PR yet at this point -- link the branch's compare view instead:
 `https://github.com/toniaquino/dev-tools-integrations-marketplace-kb/compare/main...weekly-sync/techpartners-synthesis-[DATE]`
 
-Format for the `#distr-team-kb` post (prefix with `[DRY RUN]` when DRY_RUN=true). Use
+Format for the `#distr-team-kb-log` post (prefix with `[DRY RUN]` when DRY_RUN=true). Use
 the literal Slack mention syntax `<@U04H9D3H14K>` below -- not the bare ID as plain
 text, which renders as unlinked, non-notifying text:
 ```
@@ -424,7 +424,7 @@ What changed: [summary]
 Status.md preview: [first 10 lines of generated content]
 Proposed changes (draft): [compare URL]"
 
-### Phase 9a — schedule the `#distr-team-kb` post for Bas van Reeuwijk's local 9am
+### Phase 9a — schedule the `#distr-team-kb-log` post for Bas van Reeuwijk's local 9am
 
 **TEMPORARY (2026-07-20): hardcoded timezone.** Bas van Reeuwijk's Slack timezone is
 **Europe/Amsterdam** (Amsterdam, CET). A live `users.info` lookup would be more robust
@@ -432,7 +432,7 @@ but needs the `users:read` Slack scope, which requires IT approval. Until that's
 granted, use this hardcoded value (switch to `users.info` + `tz_offset` once the scope
 lands — same scheduling logic below, just swap the timezone source).
 
-1. Compose the `#distr-team-kb` message per Phase 9 above.
+1. Compose the `#distr-team-kb-log` message per Phase 9 above.
 2. Compute today's 9:00 AM in `Europe/Amsterdam` as a UTC Unix timestamp
    (self-corrects for DST — no manual offset math):
    `target_utc=$(TZ="Europe/Amsterdam" date -d "09:00" +%s)`.
@@ -442,7 +442,7 @@ lands — same scheduling logic below, just swap the timezone source).
 4. If `target_utc` is more than ~5 minutes in the future, use
    `POST https://slack.com/api/chat.scheduleMessage` with `post_at=target_utc`. If it's
    sooner than that (already basically 9am there), `chat.postMessage` immediately. This
-   scheduling applies only to the `#distr-team-kb` post — the TONI_SLACK_ID DM (DRY_RUN
+   scheduling applies only to the `#distr-team-kb-log` post — the TONI_SLACK_ID DM (DRY_RUN
    preview only) still sends immediately.
 5. `chat.scheduleMessage` returns a `scheduled_message_id`, not a real `ts`, until the
    message actually fires. Routine A2 (Pass 2) locates the notification via
@@ -458,7 +458,7 @@ lands — same scheduling logic below, just swap the timezone source).
 - Slack channel unreadable: skip that channel, flag in PR description, DM TONI_SLACK_ID
 - Confluence unavailable: proceed without it, note in PR description
 - No changes detected: do not push a branch (there is nothing for Routine A2 to open
-  later); post a brief note in `#distr-team-kb` (prefixed `[DRY RUN]` when
+  later); post a brief note in `#distr-team-kb-log` (prefixed `[DRY RUN]` when
   DRY_RUN=true). Never post this to `#b-team-integrations`.
 - Push fails: DM TONI_SLACK_ID with Status.md content and error details
 
