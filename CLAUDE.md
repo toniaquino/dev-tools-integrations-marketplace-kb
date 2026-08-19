@@ -47,6 +47,13 @@ share a single initiative-owner/squad-PO split the way Deliver or Organize do).
 | Tony Smith | PM, Connectors | UPQ9D0BFX | tonysmith-ux |
 | Todd Willms | PM, Integrations | U01EHRXEBFE | twillmsbynder |
 
+## Governance
+
+`Governance.md` (repo root) is the config source for this repo's own Routine 6
+(weekly team-level status sync) and documents how Routine 8 (Confluence seed, still
+run from `content-variations-delivery-performance-kb`) sources its Connectors/
+Technology-Partners content from here. Added 2026-08-19.
+
 ## Key channels
 
 - `#b-team-integrations`: shared engineering channel across all three squads

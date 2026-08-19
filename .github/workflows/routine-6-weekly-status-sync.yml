@@ -1,0 +1,29 @@
+name: Routine 6 -- weekly team-level status sync (Pass 1)
+
+# NEW (2026-08-19): ported from content-variations-delivery-performance-kb's Routine 6,
+# scoped to this repo's three squads. Writes a condensed 02 Teams/<Squad>/Status.md
+# rollup, separate from Routine A's detailed per-feature Status.md files. See
+# Governance.md -> "Routine 6" for the design decision (built ahead of real cross-squad
+# demand, simplified: no digest-manifest batching, no Todd/Bart cc logic).
+# Cadence matches content-variations-delivery-performance-kb's original slot.
+
+on:
+  schedule:
+    - cron: '0 16 * * 1'  # 16:00 UTC Mondays = 8:00 AM PT
+  workflow_dispatch:       # Manual trigger for testing
+
+jobs:
+  weekly-status-sync:
+    uses: toni-aq/workflows/.github/workflows/reusable-routine-runner.yml@main
+    with:
+      repo_name: dev-tools-integrations-marketplace-kb
+      prompt_path: .github/prompts/routine-6.md
+      model: claude-sonnet-5
+      job_display_name: "weekly team-level status sync"
+    secrets:
+      ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+      GH_PAT: ${{ secrets.GH_PAT }}
+      ATLASSIAN_API_TOKEN: ${{ secrets.ATLASSIAN_API_TOKEN }}
+      ATLASSIAN_EMAIL: ${{ secrets.ATLASSIAN_EMAIL }}
+      SLACK_BOT_TOKEN: ${{ secrets.SLACK_BOT_TOKEN }}
+      DRY_RUN: ${{ secrets.DRY_RUN }}
