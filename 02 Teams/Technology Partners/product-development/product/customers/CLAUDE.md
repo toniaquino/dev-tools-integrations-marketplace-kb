@@ -10,6 +10,7 @@ and a calls/ subfolder with individual Gong call summaries.
 
 | Account | Segment | Subfolder | Notes |
 |---|---|---|---|
+| Raspberry.ai | Technology partner | raspberry-ai/ | Added 2026-08-19. Pointer stub — see "Partner context note" below |
 | [TO COMPLETE] | [Enterprise/Mid-market] | [account-name]/ | No Gong connected — add manually |
 
 > No Gong connected for this squad. Seed customer accounts by adding subfolders manually.
@@ -22,6 +23,13 @@ and a calls/ subfolder with individual Gong call summaries.
 For Technology Partners squad, "customers" in this folder represents technology partners
 that Bynder has active integration relationships with. Consider treating top certified
 or in-certification partners as the primary accounts here.
+
+Partner entries themselves are currently written in
+`02 Teams/Connectors/Partner Integrations.md` — the repo's only structured partner-entry
+format, and the one Routine 8 reads for the Confluence seed. Subfolders here are pointer
+stubs to that file, not parallel sources of truth. Revisit if this squad gets its own
+partner-entry file — see root `CLAUDE.md`'s "Structure — provisional, revisit before
+treating as final" note.
 
 ## When to read
 
