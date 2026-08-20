@@ -8,10 +8,14 @@ name: Routine A2 -- connectors-squad weekly synthesis reply processing
 # notification -- worth a close look the first time the real Tuesday/Wednesday
 # cycle completes on this schedule.
 
+# PAUSED 2026-08-19: Toni is manually managing Routine A confirmations/PR-opening
+# while #distr-team-kb-log habits form (see the notification-channel migration).
+# Schedule commented out, not deleted -- workflow_dispatch still works for a
+# manual run. Re-enable the cron line below when resuming automated Pass 2.
 on:
-  schedule:
-    - cron: '0 19 * * 3'  # 19:00 UTC Wednesdays -- 36h after Tuesday's Pass 1, same slot connectors-squad-kb used
-  workflow_dispatch:       # Manual trigger retained for testing
+  # schedule:
+  #   - cron: '0 19 * * 3'  # 19:00 UTC Wednesdays -- 36h after Tuesday's Pass 1, same slot connectors-squad-kb used
+  workflow_dispatch:       # Manual trigger -- still live while the schedule is paused
 
 jobs:
   reply-processing:
