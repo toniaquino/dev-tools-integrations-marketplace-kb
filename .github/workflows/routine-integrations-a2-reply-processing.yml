@@ -8,10 +8,14 @@ name: Routine A2 -- integrations-squad weekly synthesis reply processing
 # routine-a2-reply-processing.yml is deleted in the same change so there is no window
 # where both are live.
 
+# PAUSED 2026-08-19: Toni is manually managing Routine A confirmations/PR-opening
+# while #distr-team-kb-log habits form (see the notification-channel migration).
+# Schedule commented out, not deleted -- workflow_dispatch still works for a
+# manual run. Re-enable the cron line below when resuming automated Pass 2.
 on:
-  schedule:
-    - cron: '30 19 * * 3'  # 19:30 UTC Wednesdays -- same deterministic slot integrations-squad-kb used
-  workflow_dispatch:       # Manual trigger retained for testing
+  # schedule:
+  #   - cron: '30 19 * * 3'  # 19:30 UTC Wednesdays -- same deterministic slot integrations-squad-kb used
+  workflow_dispatch:       # Manual trigger -- still live while the schedule is paused
 
 jobs:
   reply-processing:
