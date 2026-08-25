@@ -1,20 +1,24 @@
 # Integrations Marketplace
 
+> ⚠️ **Overdue for human review.** Last reviewed 2026-07-21; review was due 2026-08-18. Content below continues to be refreshed weekly by the synthesis routine, but needs a human pass to confirm accuracy.
+
 **Owner:** Tony Smith
-**Status:** 🟢 New i-Hub solution: Braze (INC-1239) shipped to production; Zyng Connector and SSTK config-wizard workflows advanced with two more shipped sub-features; SAPCC Catalog Version override shipped; Workfront connector-architecture evaluation completed; no blockers surfaced in Jira or Slack this week (feature-index completeness gaps flagged separately below).
-**Last updated:** 2026-08-14
+**Status:** 🟡 Shipping continued at pace (BEAST/SSTK sub-features, VNTANA asset-duplication fix), but a new external dependency risk surfaced this week -- see Blockers.
+**Last updated:** 2026-08-25
 **Last reviewed:** 2026-07-21
 **Review due:** 2026-08-18
 **Source channels:** #team-connectors (accessible this run via the hardcoded channel ID) and #b-help-integrationshub (`not_in_channel` again this run — bot still not a member, same as prior weeks); Jira board INC.
 
 ## Current state
 
-- New i-Hub solution: Braze (INC-1239) shipped to production this week -- feature-index.yaml updated from 🔵 In progress to ✅ Shipped accordingly.
-- Zyng Connector - Q3 2026 (INC-1339) core-workflow build continued: Color Swatch and Breuninger workflow-separation features shipped (INC-1424, INC-1425); a new research spike opened evaluating Claude in Tray (INC-1421, INC-1422, under INC-1342, To Do).
-- SAPCC support under General Bugs & Support - Q3 2026 (INC-1336): Catalog Version override improvement shipped (INC-1346).
-- SSTK epic (INC-1341 -- not yet tracked in feature-index.yaml) saw active work: config wizard user-validation check shipped (INC-1427); config-wizard table consolidation (INC-1429) and connector user-agent header update (INC-1426) both in progress.
-- Workfront: connector-architecture evaluation epic and its research task both completed this week (INC-1345, INC-1374); Voya upload-failure bug resolved (INC-1405); new task opened to map Workfront fields into the Bynder Description Field (INC-1428, To Do). Also new this week and not yet tracked in feature-index.yaml: two Michael Kors / VNTANA items -- an asset-duplication import bug (INC-1430) and a bundled integration feature request (INC-1401), both To Do.
+- Michael Kors / VNTANA: new "connector duplicating assets on import" bug (INC-1433) opened and shipped same day; the separate "additional asset is failing" bug (INC-1430) advanced from To Do to Code review; feature-request items (INC-1401, INC-1323) remain To Do.
+- SSTK / BEAST Q3 2026 build (epic INC-1341, still not tracked in feature-index.yaml): five sub-features shipped this week -- BEAST storage-activation flow, Sync Controller record fetch, and uploader-flow record adds (INC-1385, INC-1386, INC-1387), connector user-agent header update (INC-1426), and sync queueLock (INC-1432); data-migration tooling from legacy storage (INC-1390) in progress.
+- New investigation opened: UCV Connector for Shopify (INC-1434, To Do) -- not yet scoped or added to feature-index.yaml.
+- Squad channel flagged a Bynder Asset-API bug (ASSET-2974, owned by the Asset team, tracked outside board INC) blocking embedded-metadata mapping on Workspace upload for Workfront customer Caesars Entertainment.
+- No epic-level status changes this week for features already tracked in feature-index.yaml (Zyng, Unsplash, Vimeo POC, Braze POC all unchanged); no epics shipped this week -- feature launch completeness check (Phase 2c) has nothing to flag.
 
 ## Blockers
+
+- Embedded metadata mapping for Workfront (Caesars Entertainment): depends on a fix from the Asset team to the new asset API; blocks confirming this Workspace-upload workflow as complete. Owner: Asset team -- no named individual surfaced in the Slack thread; flagged for Tony Smith to confirm an escalation contact. Status: open, tracked in ASSET-2974 (Asset team's board, not INC).
 
 ## Commercial (Internal Only)
