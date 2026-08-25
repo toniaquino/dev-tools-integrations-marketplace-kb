@@ -1,22 +1,20 @@
 > ⚠️ **Overdue for human review.** Review due 2026-07-25 has passed (last reviewed 2026-06-27). Please have a human confirm this content is still accurate.
 
-> ⚠️ **Overdue for human review.** Review due 2026-07-25 has passed (last reviewed 2026-06-27). Please have a human confirm this content is still accurate.
-
 # API Extensibility
 
 **Owner:** Todd Willms
-**Status:** 🟡 Webhooks Part 1 remains blocked; Agentic SDK harness and Transformation Permissions work progressing
-**Last updated:** 2026-08-18
+**Status:** 🟡 Webhooks Part 1 remains blocked; Agentic SDK scope expanding with a new multi-language SDK epic; React 19 migration and Wiz remediation nearing completion
+**Last updated:** 2026-08-25
 **Last reviewed:** 2026-06-27
 **Review due:** 2026-07-25
 **Source channels:** #api-team, Jira API board
 
 ## Current state
 
-- Agentic SDK Implementation (API-2744): harness repo created (API-2858, done 2026-08-13) and harness set-up (API-2779) now In Progress; five SDK parity investigations (JS, Java, Python, PHP, C#) completed 2026-08-13 — epic itself still shows Backlog in Jira, which looks out of date given this activity
-- Transformation Permissions epic (API-2747): follow-on ticket [FE] Enable Presets in DAT for UCV (API-2828) moved to Done as of 2026-08-17 (was in code review last week)
-- React 19 migration progressing: UCV support (API-2838) moved to Merge status 2026-08-13; Integrations Hub support (API-2841) done 2026-08-13; release ticket API-2842 in code review as of 2026-08-17 and being validated via canary per #api-team
-- Wiz vulnerability remediation for bynder-js-sdk (API-2859) completed 2026-08-17; remediation for other FE repos still pending owner follow-up per #api-team thread (2026-08-13)
+- New epic API-2869 (Initial Multi-Language SDK Codebase & Public-Repo Fan-Out — Walking Skeleton) created 2026-08-19 with 12 scaffolding tasks defined across Python/Java/JS/C#/PHP SDKs (pagination, chunked upload, error mapping, CI gate); all still To Do — not yet reflected in feature-index.yaml
+- Agentic SDK Implementation (API-2744) scope expanded to Asset API resumable-upload support across five languages (API-2770/2771/2772/2773, plus C# investigation API-2768) and per-language harness creation (API-2775/2776/2777/2778); Python harness (API-2776) now In Progress — epic itself still shows Backlog in Jira, which looks out of date given this activity
+- Wiz vulnerability remediation completed for the two remaining flagged FE repos: bynder-compactview (API-2868, lodash CVE) done 2026-08-21 and ucv-chrome-extension (API-2867, postcss CVE) done 2026-08-19 — all FE repos flagged in prior weeks are now remediated
+- React 19 migration: UCV support (API-2838) and Integrations Hub release (API-2842) both moved to Done; a full UCV migration PR (bynder-compactview #609, flagged as "a big one" per #api-team) is now tracked as API-2840 and in code review; new major UCV version release (API-2839) in progress, with two DATBuilderRevamped follow-on tasks queued (API-2855, API-2856)
 - Webhooks Legacy Events Improvements Part 1 (API-2624) remains blocked and unassigned, no movement since 2026-07-01 — still gating Part 2 (API-2670) and DAT Link Generated Event (API-2534)
 
 ## Blockers
