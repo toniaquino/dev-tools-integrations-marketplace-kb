@@ -2,7 +2,7 @@
 # Maps every feature to all related artifacts in one lookup.
 # Delivery tracking via Jira (board MP, confirmed 2026-07-08), Slack (#b-team-integrations),
 # and Confluence (INTEGRATE space).
-# Last updated: 2026-08-18
+# Last updated: 2026-08-25
 
 features:
   - name: "Integration Abstraction Layer (IAL)"
@@ -20,9 +20,9 @@ features:
 
   - name: "Integration Certification Program"
     initiative: "Integrations Marketplace"
-    status: "🟡 In progress — Release Q3.2 (2026) wave (5 items) passed certification, now Awaiting Release; queue still has one long-stalled and one new item"
+    status: "🟡 In progress — Release Q3.2 (2026) wave (5 items) still Awaiting Release, no movement this week; two new items entered Awaiting Certification under Release Q4.1 (2026)"
     owner: "Bas van Reeuwijk"
-    last_signal: "2026-08-14 (Jira board MP) — Vista Social (MP-264), Fluiid4/CLX (MP-260), Brandfolder Migration Tool/Gournay (MP-258), Fadel/Gournay Consulting (MP-257), and Corsearch (MP-254) all moved Awaiting Certification -> Awaiting Release, parented under Release Q3.2 (2026) epic (MP-253, itself still Backlog); corroborated by matching Confluence partner-page edits the same day. CloudCannon (MP-267) entered Awaiting Certification 2026-08-13 under Release Q4.1 (2026)/MP-259 (new). Pencil.ai (MP-249) still Awaiting Certification, touched 2026-08-12 with no status change (~5 weeks stalled, since 2026-07-13). BrightCarbon (MP-266) unchanged since 2026-08-05 (Awaiting Certification, ~13 days). MP-82 epic still Backlog, unchanged since 2025-10-07."
+    last_signal: "2026-08-19 (Jira board MP) — Raspberry AI (MP-269) entered Awaiting Certification, parented under Release Q4.1 (2026)/MP-259 (joining CloudCannon there); Beautiful.ai (MP-251) also entered Awaiting Certification, no parent epic assigned. The Release Q3.2 (2026) wave (Vista Social/MP-264, Fluiid4-CLX/MP-260, Brandfolder Migration Tool-Gournay/MP-258, Fadel-Gournay Consulting/MP-257, Corsearch/MP-254) shows no further Jira movement this week — still Awaiting Release, not yet Released. Pencil.ai (MP-249) still Awaiting Certification with no status change (~6 weeks stalled, since 2026-07-13). BrightCarbon (MP-266) unchanged since 2026-08-05 (Awaiting Certification, ~3 weeks). MP-82 epic still Backlog, unchanged since 2025-10-07."
     artifacts:
       prd: "[TO COMPLETE]"
       rfc: "[TO COMPLETE]"
@@ -35,7 +35,7 @@ features:
     initiative: "Integrations Marketplace"
     status: "🟡 In progress — possible next wave underway but unconfirmed; last Jira-confirmed wave remains Release Q3.1 (2026)"
     owner: "Bas van Reeuwijk"
-    last_signal: "2026-08-17 (Confluence, INTEGRATE space) — 'Partner Integrations & Connectors' overview page (1920630816) restructured from a single large inline table (v302) to a page-tree of individual partner pages via a Confluence 'children' macro (v307); ~246 pages across the space touched by Bas van Reeuwijk between 2026-08-11 and 2026-08-18, built from a new 'Partner Integration Article TEMPLATE' (page 6401753122). No Jira epic or Slack thread confirms this as an intentional Doc Migration wave — flagged for PM confirmation. Last confirmed Jira wave remains 2026-07-13 (MP-242, Done), closing the 5-partner doc migration wave (VNTANA MP-250, MessageGears MP-248, Xperience by Kentico/Actum Digital MP-20, Caimera MP-252, ConnectingTheDots MP-256)."
+    last_signal: "2026-08-25 (Confluence, INTEGRATE space) — restructuring continues: 71 more individual partner pages touched by Bas van Reeuwijk between 2026-08-18 and 2026-08-25 (e.g. Salsify, Bynder Plugin for Figma, Shopify/Dataggo, several Akeneo connectors, Contentstack, Kentico Xperience, the CI-Hub connector family), building on the single-table -> page-tree restructuring (v307, 2026-08-17) via the 'Partner Integration Article TEMPLATE' (page 6401753122). The canonical overview page (1920630816) itself was not touched this week. Still no Jira epic or Slack thread confirms this as an intentional Doc Migration wave — flagged for PM confirmation for a second consecutive week. Last confirmed Jira wave remains 2026-07-13 (MP-242, Done), closing the 5-partner doc migration wave (VNTANA MP-250, MessageGears MP-248, Xperience by Kentico/Actum Digital MP-20, Caimera MP-252, ConnectingTheDots MP-256)."
     artifacts:
       prd: "[TO COMPLETE]"
       rfc: "[TO COMPLETE]"
@@ -48,7 +48,7 @@ features:
     initiative: "Integrations Marketplace"
     status: "🟡 In progress — Confluence restructuring of the partner directory into per-partner pages; new pages created for partners currently moving through certification/release"
     owner: "Bas van Reeuwijk"
-    last_signal: "2026-08-17 (Confluence, INTEGRATE space, page 1920630816 v307) — partner directory restructured from a single inline table to per-partner pages built on a new 'Partner Integration Article TEMPLATE' (~246 pages touched 2026-08-11 to 2026-08-18). New/updated per-partner pages line up with this week's Jira movement: Vista Social, Fluiid4 (CLX), Brandfolder Migration Tool (Gournay), Fadel (Gournay Consulting), Corsearch, and CloudCannon all got dedicated pages. This is a structural/process change, not a new-connector-release signal; no new connectors reported released this week."
+    last_signal: "2026-08-25 (Confluence, INTEGRATE space) — 71 more per-partner pages built/edited by Bas van Reeuwijk between 2026-08-18 and 2026-08-25, continuing the prior week's restructuring (page 1920630816 v307, 2026-08-17). The partner directory overview page itself was not touched this week — only individual partner pages. This remains a structural/process change, not a new-connector-release signal; no new connectors reported released this week."
     artifacts:
       prd: "[TO COMPLETE]"
       rfc: "[TO COMPLETE]"
