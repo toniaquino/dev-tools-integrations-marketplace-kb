@@ -140,6 +140,19 @@ features:
       metrics: "PENDING"
       customer_context: "[TO COMPLETE]"
 
+  # ── Multi-language SDK track ───────────────────────────────────────────────
+  - name: "Initial Multi-Language SDK Codebase & Public-Repo Fan-Out (Walking Skeleton)"
+    initiative: "API Extensibility"
+    status: "🔵 Planning"
+    owner: "[TO COMPLETE]"
+    artifacts:
+      prd: "[TO COMPLETE]"
+      rfc: "[TO COMPLETE]"
+      jira_epic: "API-2869"
+      figma: "[TO COMPLETE]"
+      metrics: "PENDING"
+      customer_context: "[TO COMPLETE]"
+
   # ── Technical / infrastructure ────────────────────────────────────────────
   - name: "Decommission Legacy ReasonML GraphQL Service"
     initiative: "API Extensibility"
