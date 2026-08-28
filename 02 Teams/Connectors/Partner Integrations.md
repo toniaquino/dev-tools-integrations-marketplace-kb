@@ -213,6 +213,30 @@ A third case is not an integration at all and is flagged below.
 - 2026-08-17 | **Partnership kickoff — first commercial counterpart in three years** | Meghan Dussault met Braze's partnerships team. Braze followed up the same day introducing a US point of contact for account mapping and joint sales opportunities plus a further partnerships contact, framing the integration as moving forward. Meghan confirmed Bynder was looking forward to kicking off the partnership. Bas separately shared the "Bynder + Braze Integration" document with Paul Cashell.
 - 2026-08-18 | **Documentation accepted; listing imminent** | Paul Cashell confirmed he had reviewed Bynder's documentation, called it good, and forwarded it to Braze's documentation team, saying Bynder should be launched soon. Bas submitted his contact via Partner Fleet as escalation contact and Braze accepted the application. **This is the current state: a listing and a commercial relationship about to go live, with no integration behind them and no Bynder-side documentation written.**
 
+## CI Hub
+
+> **Sourced from Toni's vault note only (2026-08-19/21) — not independently researched** against Jira/Confluence/email the way other entries in this file are. Flagging so this isn't read as having the same evidentiary depth.
+
+**Type:** Not established from source — CI Hub has been an existing reseller-model partner on Bynder's pricelist; whether the integration itself is Bynder-built or partner-built is not stated in the source note.
+**Status:** Contract dispute, escalated to Legal — transitioning from reseller to referral partnership; being removed from Bynder's pricelist.
+**PM contact:** Bas van Reeuwijk (Technology Partners & Marketplace)
+**Legal contact:** Mark Tenniglo (dispute escalation)
+
+### Current state
+- **Contract dispute sent to Legal (as of 2026-08-19).** Direction from Dom, confirmed in discussion with Bas van Reeuwijk: pivot CI Hub from a reseller relationship to a referral partnership, and remove CI Hub from Bynder's pricelist. Framed as a commercial pivot, not a product deprecation — the integration itself may continue, but the revenue-sharing/reseller structure is going away.
+- **Referral model confirmed as the likely outcome (2026-08-21 discussion, Bas van Reeuwijk).** Bas is the PM owner for the transition.
+
+### Open items
+- [ ] Who communicates the change to CI Hub, and when
+- [ ] Whether the integration remains in the product post-transition (referral-only) or is deprecated entirely
+- [ ] Which pricelist SKUs/line items reference CI Hub — both contract versions (reseller + referral) need gathering and pricelist implications summarized for Dom/Mark
+- [ ] Whether a referral agreement template already exists or needs to be created
+- [ ] Timeline for dispute resolution and transition execution (Mark Tenniglo / Legal)
+
+### Log
+- 2026-08-19 | Dom 1:1 | Contract dispute went to Legal (Mark Tenniglo). Direction: pivot to referral model to reduce commercial/legal exposure.
+- 2026-08-21 | Discussion with Bas van Reeuwijk | Referral partner relationship confirmed as the likely outcome; CI Hub to be removed from Bynder's pricelist.
+
 ## CloudCannon
 
 > **Squad note:** CloudCannon is a **Technology Partners** squad partner (Bas van Reeuwijk),
