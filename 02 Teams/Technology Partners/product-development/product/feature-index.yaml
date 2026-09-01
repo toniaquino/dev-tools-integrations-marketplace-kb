@@ -2,7 +2,7 @@
 # Maps every feature to all related artifacts in one lookup.
 # Delivery tracking via Jira (board MP, confirmed 2026-07-08), Slack (#b-team-integrations),
 # and Confluence (INTEGRATE space).
-# Last updated: 2026-08-18
+# Last updated: 2026-09-01
 
 features:
   - name: "Integration Abstraction Layer (IAL)"
@@ -20,9 +20,9 @@ features:
 
   - name: "Integration Certification Program"
     initiative: "Integrations Marketplace"
-    status: "🟡 In progress — Release Q3.2 (2026) wave (5 items) passed certification, now Awaiting Release; queue still has one long-stalled and one new item"
+    status: "🟢 On track — Release Q3.2 (2026) wave (5 items) shipped this week; Release Q4.1 (2026) wave now has two items in active development; queue still has two long-stalled items"
     owner: "Bas van Reeuwijk"
-    last_signal: "2026-08-14 (Jira board MP) — Vista Social (MP-264), Fluiid4/CLX (MP-260), Brandfolder Migration Tool/Gournay (MP-258), Fadel/Gournay Consulting (MP-257), and Corsearch (MP-254) all moved Awaiting Certification -> Awaiting Release, parented under Release Q3.2 (2026) epic (MP-253, itself still Backlog); corroborated by matching Confluence partner-page edits the same day. CloudCannon (MP-267) entered Awaiting Certification 2026-08-13 under Release Q4.1 (2026)/MP-259 (new). Pencil.ai (MP-249) still Awaiting Certification, touched 2026-08-12 with no status change (~5 weeks stalled, since 2026-07-13). BrightCarbon (MP-266) unchanged since 2026-08-05 (Awaiting Certification, ~13 days). MP-82 epic still Backlog, unchanged since 2025-10-07."
+    last_signal: "2026-08-27 to 2026-08-31 (Jira board MP) — Corsearch (MP-254, released 2026-08-28), Brandfolder Migration Tool/Gournay (MP-258, released 2026-08-27), Fadel/Gournay Consulting (MP-257, released 2026-08-27), Fluiid4/CLX (MP-260, released 2026-08-31), and Vista Social (MP-264, released 2026-08-31) all moved to RELEASED, parented under Release Q3.2 (2026) epic (MP-253, itself still Backlog); corroborated by matching Confluence partner-page edits the same days. Dyspatch (MP-270, Under Development 2026-08-27) and Bynder DAM Connector for Umbraco/Uxbee (MP-271, Under Development 2026-08-31) are new items under Release Q4.1 (2026)/MP-259. Raspberry AI validated per Bas in Slack (#b-team-integrations, 2026-08-26), targeting the Q4.1 (2026) cycle — no Jira issue yet. Pencil.ai (MP-249) still Awaiting Certification, no activity this week (~7 weeks stalled, since 2026-07-13). BrightCarbon (MP-266) unchanged since 2026-08-05 (Awaiting Certification, ~4 weeks). CloudCannon (MP-267) unchanged since 2026-08-13. MP-82 epic still Backlog, unchanged since 2025-10-07."
     artifacts:
       prd: "[TO COMPLETE]"
       rfc: "[TO COMPLETE]"
