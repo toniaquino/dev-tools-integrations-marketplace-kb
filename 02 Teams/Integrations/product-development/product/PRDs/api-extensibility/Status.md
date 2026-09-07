@@ -18,11 +18,12 @@
 - Transformation Permissions epic (API-2747): follow-on ticket [FE] Enable Presets in DAT for UCV (API-2828) moved to Done as of 2026-08-17 (was in code review last week)
 - React 19 migration progressing: UCV support (API-2838) moved to Merge status 2026-08-13; Integrations Hub support (API-2841) done 2026-08-13; release ticket API-2842 in code review as of 2026-08-17 and being validated via canary per #api-team
 - Wiz vulnerability remediation for bynder-js-sdk (API-2859) completed 2026-08-17; remediation for other FE repos still pending owner follow-up per #api-team thread (2026-08-13)
-- Webhooks Legacy Events Improvements Part 1 (API-2624) remains blocked and unassigned, no movement since 2026-07-01 — still gating Part 2 (API-2670) and DAT Link Generated Event (API-2534)
+- Webhooks Legacy Events Improvements Part 1 (API-2624) remains blocked, no movement since 2026-07-01 — still gating Part 2 (API-2670) and DAT Link Generated Event (API-2534). Owner assumed to have transferred to Efrain De Los Santos per the 2026-09-04 EM backfill below -- not independently confirmed in Jira.
+- **Engineering org move, new (2026-09-04).** Wesley Christelis moving to lead API/Insomnia efforts. Efrain De Los Santos backfilling as EM for integrations -- becomes Tony Smith's new day-to-day engineering counterpart. The two already work together on Connectors, so this is a natural transition.
 
 ## Blockers
 
-- **Webhooks Legacy Events Improvements Part 1 (API-2624)**: Blocking Webhooks Asset Legacy Events Part 2 (API-2670) and DAT Link Generated Event (API-2534). Owner: Unassigned in Jira — still to be confirmed. Status: Blocked as of 2026-07-01; requires external resolution.
+- **Webhooks Legacy Events Improvements Part 1 (API-2624)**: Blocking Webhooks Asset Legacy Events Part 2 (API-2670) and DAT Link Generated Event (API-2534). Owner: assumed transferred to Efrain De Los Santos following the 2026-09-04 EM backfill (Wesley Christelis moved to API/Insomnia) -- not independently confirmed in Jira, flag for correction if wrong. Status: Blocked as of 2026-07-01; requires external resolution.
 
 ## Commercial (Internal Only)
 
