@@ -6,6 +6,7 @@
 
 ## This week
 
+- **Gournay Consulting staffing watch, new (2026-09-03).** A developer moved from Gournay Consulting to Lettuce Commerce (another Bynder technology partner) -- an internal move between two partners in the ecosystem, not an industry departure. Worth monitoring for continuity effects on Gournay's active work (Brandfolder Migration Tool/MP-258, Fadel/MP-257, both currently Awaiting Release). No specific action yet. *(Source: Toni's vault, 2026-09-03 1:1)*
 - **Certification Program:** Five partner integrations advanced from Awaiting Certification
   to Awaiting Release on 2026-08-14, all parented under the Release Q3.2 (2026) epic
   (MP-253, itself still Backlog): Vista Social (MP-264), Fluiid4/CLX (MP-260), Brandfolder
