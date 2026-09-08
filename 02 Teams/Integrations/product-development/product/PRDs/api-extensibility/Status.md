@@ -1,29 +1,25 @@
 > ⚠️ **Overdue for human review.** Review due 2026-07-25 has passed (last reviewed 2026-06-27). Please have a human confirm this content is still accurate.
 
-> ⚠️ **Overdue for human review.** Review due 2026-07-25 has passed (last reviewed 2026-06-27). Please have a human confirm this content is still accurate.
-
 # API Extensibility
 
 **Owner:** Todd Willms
-**Status:** 🟡 Webhooks Part 1 remains blocked; Agentic SDK harness and Transformation Permissions work progressing
-**Last updated:** 2026-08-18
+**Status:** 🟡 Webhooks Part 1 remains blocked; Agentic SDK OAuth/harness work advancing, Electrolux smartfilters bug under active investigation
+**Last updated:** 2026-09-08
 **Last reviewed:** 2026-06-27
 **Review due:** 2026-07-25
 **Source channels:** #api-team, Jira API board
 
 ## Current state
 
-- **Kong developer-portal CAB prep + "API-first middleware" positioning (new, 2026-08-27).** A skeleton/outline for the Kong/developer-portal Bynder Connect CAB update is being prepared, with Kevin Duque building the final deck from it (target: Sept 8 CAB session). Separately, Dom and Mike Mansell are shaping an "API-first middleware layer" position, which Dom has asked to be translated into a marketing narrative — intended to stay coherent with the portal-as-product/MCP-as-AI-hub framing raised in Todd Willms's 2026-08-25 1:1.
-- Agentic SDK Implementation (API-2744): harness repo created (API-2858, done 2026-08-13) and harness set-up (API-2779) now In Progress; five SDK parity investigations (JS, Java, Python, PHP, C#) completed 2026-08-13 — epic itself still shows Backlog in Jira, which looks out of date given this activity
-- Transformation Permissions epic (API-2747): follow-on ticket [FE] Enable Presets in DAT for UCV (API-2828) moved to Done as of 2026-08-17 (was in code review last week)
-- React 19 migration progressing: UCV support (API-2838) moved to Merge status 2026-08-13; Integrations Hub support (API-2841) done 2026-08-13; release ticket API-2842 in code review as of 2026-08-17 and being validated via canary per #api-team
-- Wiz vulnerability remediation for bynder-js-sdk (API-2859) completed 2026-08-17; remediation for other FE repos still pending owner follow-up per #api-team thread (2026-08-13)
-- Webhooks Legacy Events Improvements Part 1 (API-2624) remains blocked, no movement since 2026-07-01 — still gating Part 2 (API-2670) and DAT Link Generated Event (API-2534). Owner assumed to have transferred to Efrain De Los Santos per the 2026-09-04 EM backfill below -- not independently confirmed in Jira.
-- **Engineering org move, new (2026-09-04).** Wesley Christelis moving to lead API/Insomnia efforts. Efrain De Los Santos backfilling as EM for integrations -- becomes Tony Smith's new day-to-day engineering counterpart. The two already work together on Connectors, so this is a natural transition.
+- **Electrolux Compact View Smartfilters bug (API-2746), new (2026-09-02 to 09-04).** Root cause traced to the gateway failing to resolve `metapropertyFilters` in the GraphQL response while other fields (tags, count) return fine; BE fix owned by Alex Hong still in progress. FE graceful-fallback fix (bynder-compactview PR #618) deployed to stage 2026-09-04, pending Tony Smith verification.
+- **Wiz high-severity vulnerability sweep, new (2026-09-03 to 09-04).** New findings flagged across ucv-chrome-extension, bynder-compactview-superlight, bynder-js-sdk, and bynder-wordpress; postcss CVE (API-2892) and nanoid CVE (API-2891) fixed 2026-09-04 for the first two repos. bynder-js-sdk and bynder-wordpress remediation still pending owner follow-up (open since 2026-08-13).
+- **Agentic SDK Implementation (API-2744) progressing, new (2026-09-01 to 09-03).** PHP and Java harness set-up (API-2777, API-2778) and PHP/Python OAuth endpoint implementation (API-2890, API-2885) all completed this week — epic itself still shows Backlog in Jira, increasingly out of date given this sustained activity (also flagged last update).
+- **Engineering org move (2026-09-04).** Wesley Christelis moving to lead API/Insomnia efforts. Efrain De Los Santos backfilling as EM for integrations -- becomes Tony Smith's new day-to-day engineering counterpart. The two already work together on Connectors, so this is a natural transition.
+- React 19 migration: UCV support (API-2840) moved to Merge status 2026-09-02; Integrations Hub support and the release ticket were previously completed/in canary review as of 2026-08-17.
 
 ## Blockers
 
-- **Webhooks Legacy Events Improvements Part 1 (API-2624)**: Blocking Webhooks Asset Legacy Events Part 2 (API-2670) and DAT Link Generated Event (API-2534). Owner: assumed transferred to Efrain De Los Santos following the 2026-09-04 EM backfill (Wesley Christelis moved to API/Insomnia) -- not independently confirmed in Jira, flag for correction if wrong. Status: Blocked as of 2026-07-01; requires external resolution.
+- **Webhooks Legacy Events Improvements Part 1 (API-2624)**: Blocking Webhooks Asset Legacy Events Part 2 (API-2670) and DAT Link Generated Event (API-2534). Owner: assumed transferred to Efrain De Los Santos following the 2026-09-04 EM backfill (Wesley Christelis moved to API/Insomnia) -- not independently confirmed in Jira, flag for correction if wrong. Status: Blocked as of 2026-07-01, no movement this week; requires external resolution.
 
 ## Commercial (Internal Only)
 
