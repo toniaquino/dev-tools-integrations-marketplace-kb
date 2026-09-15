@@ -147,6 +147,19 @@ features:
 
   # ── RECENTLY SHIPPED ─────────────────────────────────────────────────────────
 
+  - name: "Bynder Extended Application Storage for Tray (BEAST Q3 2026)"
+    initiative: "Integrations Marketplace"
+    status: "✅ Shipped"
+    owner: "Bill Keiffer"
+    artifacts:
+      prd: "[TO COMPLETE]"
+      rfc: "[TO COMPLETE]"
+      jira_epic: "INC-1341"
+      figma: "[TO COMPLETE]"
+      metrics: "PENDING"
+      customer_context: "[TO COMPLETE]"
+    # Shipped 2026-09-08; had no feature-index entry before this. Artifacts incomplete.
+
   - name: "Bynder Extended Application Storage for Tray [BEAST]"
     initiative: "Integrations Marketplace"
     status: "✅ Shipped"

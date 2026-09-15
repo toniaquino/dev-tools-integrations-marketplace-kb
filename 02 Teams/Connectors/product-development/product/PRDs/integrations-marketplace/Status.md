@@ -1,28 +1,24 @@
+> ⚠️ **Overdue for human review.** Last reviewed 2026-07-21; review was due 2026-08-18.
+
 # Integrations Marketplace
 
 **Owner:** Tony Smith
-**Status:** 🟡 MCP for UCV confirmed as the lead Bynder Connect CAB strategic bet; Electrolux integration bug remains a critical blocker (workaround holding); Beast/Shutterstock push delayed to ~Sept 11 for code freeze; EPAM moving to a formal strategic partnership; Shopify UCV-based V1 pilot planned
-**Last updated:** 2026-09-03
+**Status:** 🟡 BEAST Q3 2026 (INC-1341) shipped Sept 8, but has no feature-index artifacts yet; Electrolux integration bug remains a critical blocker (workaround holding); Beast/Shutterstock push proceeding toward the Sept 11 code-freeze target; MCP for UCV, EPAM, and Shopify strategic threads continue
+**Last updated:** 2026-09-15
 **Last reviewed:** 2026-07-21
 **Review due:** 2026-08-18
-**Source channels:** #team-connectors (accessible this run via the hardcoded channel ID) and #b-help-integrationshub (`not_in_channel` again this run — bot still not a member, same as prior weeks); Jira board INC.
+**Source channels:** #team-connectors (accessible this run via the hardcoded channel ID; 3 messages this week, none about squad status -- an internal Claude-credit request thread and a sick-day note) and #b-help-integrationshub (`not_in_channel` again this run — bot still not a member, same as prior weeks); Jira board INC.
 
 ## Current state
 
-- **MCP for UCV confirmed as the lead CAB strategic bet for Bynder Connect (Sept 8 session), new (2026-09-03).** Breuninger agent named as the secondary bet. Tony Smith drafting CAB talking points. Marketplace channel announcement also confirmed for Connect (major launch), with APAC interest already surfacing from enablement sessions this week.
-- **Beast/Shutterstock, new (2026-09-03):** customer comms going out immediately; push itself delayed to approx. Sept 11 to avoid code freeze and give customers adequate notice, with a second round of notices next week. Proactive communication via CSMs/DSEs confirmed as the channel -- Tray lacks granular per-customer notification capability.
-- **EPAM partner elevation, new (2026-09-03):** moving toward a more formal, strategic partnership. Eugene Nikiforov (eugene_nikiforov@epam.com) is the primary DAM/PIM contact; Tony Smith to initiate contact with Dylan Donoughe to advance the relationship.
-- **Shopify connector, new (2026-09-03):** plan to pilot a UCV-based V1. Tony scoping with Carl and Eileen. Current internal expertise gap on Shopify -- external partners recommended as the path to building the target connector.
-- **UCV triage moving to the India team, new (2026-09-03):** moving UCV support/triage tasks to the India development team to free senior devs for innovation work. Priority action for Tony this week.
-- **Electrolux, new (2026-09-03):** integration bug remains a critical blocker, limiting their CX/Omnichannel feature use. Workaround in place; escalate only if the workaround fails.
-- New i-Hub solution: Braze (INC-1239) shipped to production this week -- feature-index.yaml updated from 🔵 In progress to ✅ Shipped accordingly.
-- Zyng Connector - Q3 2026 (INC-1339) core-workflow build continued: Color Swatch and Breuninger workflow-separation features shipped (INC-1424, INC-1425); a new research spike opened evaluating Claude in Tray (INC-1421, INC-1422, under INC-1342, To Do).
-- SAPCC support under General Bugs & Support - Q3 2026 (INC-1336): Catalog Version override improvement shipped (INC-1346).
-- SSTK epic (INC-1341 -- not yet tracked in feature-index.yaml) saw active work: config wizard user-validation check shipped (INC-1427); config-wizard table consolidation (INC-1429) and connector user-agent header update (INC-1426) both in progress.
-- Workfront: connector-architecture evaluation epic and its research task both completed this week (INC-1345, INC-1374); Voya upload-failure bug resolved (INC-1405); new task opened to map Workfront fields into the Bynder Description Field (INC-1428, To Do). Also new this week and not yet tracked in feature-index.yaml: two Michael Kors / VNTANA items -- an asset-duplication import bug (INC-1430) and a bundled integration feature request (INC-1401), both To Do.
+- **BEAST Q3 2026 (INC-1341) shipped to Done (2026-09-08), new (2026-09-15).** No feature-index.yaml entry existed for this epic before this update; added this week with artifacts marked incomplete -- see Feature launch completeness in this week's sync PR.
+- **Beast/Shutterstock, carried from 2026-09-03:** customer comms underway; push itself targeted for approx. Sept 11 to avoid code freeze, with a second round of notices to follow. Proactive communication via CSMs/DSEs confirmed as the channel -- Tray lacks granular per-customer notification capability.
+- **Strategic threads ongoing, carried from 2026-09-03:** MCP for UCV remains the lead Bynder Connect CAB strategic bet; EPAM elevation toward a formal strategic partnership continues (Tony Smith to loop in Dylan Donoughe); Shopify UCV-based V1 pilot scoping continues with Carl and Eileen.
+- **Two customer-facing bugs resolved this week, new (2026-09-15):** Getty sync-duration bug (INC-1436, under the Technical Debt and Maintenance epic INC-451); iStock integration error entering Client ID/Secret in Webdam (INC-1156).
+- **Research activity, new (2026-09-15):** Claude-in-Tray research spike (INC-1422, under INC-1342) moved from To Do to In Progress; new research opened on FTP via i-Hub to Workspace batching (INC-1443, To Do) and on consolidated VNTANA/Michael Kors feature requests (INC-1323, To Do).
 
 ## Blockers
 
-- 🔴 Electrolux integration bug is a critical blocker limiting CX/Omnichannel feature use, new (2026-09-03) -- workaround holding, escalate only if it fails.
+- 🔴 Electrolux integration bug is a critical blocker limiting CX/Omnichannel feature use, carried from 2026-09-03 -- workaround holding, escalate only if it fails.
 
 ## Commercial (Internal Only)
