@@ -1,24 +1,22 @@
 # Connectors
 
-**Status:** 🟢 On track — BEAST/SSTK migration fully shipped this week, along with the Claude-in-Tray evaluation and Box Integration. No blockers identified from either source this run.
-**Last updated:** 2026-09-07
-**Last reviewed:** 2026-08-31
-**Review due:** 2026-09-14
+**Status:** 🟢 On track — BEAST (Tray storage) epic shipped this week; routine iStock/Getty/SSTK fixes clearing, no new blockers surfaced
+**Last updated:** 2026-09-14
+**Last reviewed:** 2026-09-14
+**Review due:** 2026-09-28
 **Owner:** Tony Smith
-**Source channels:** #team-connectors, #b-team-integrations (#b-help-integrationshub not accessible to this bot this run — `not_in_channel`; same gap as the prior two runs, still needs the domain owner to confirm bot membership)
+**Source channels:** #team-connectors, #b-help-integrationshub (not scanned — bot returned `not_in_channel`), #b-team-integrations (shared); Jira board INC
 
 ## Current state
-- BEAST/SSTK migration complete: SSTK instance migration (INC-1391) and converting BEAST calls to the prod environment (INC-1389) both shipped this week (Done, 2026-09-04), following last week's completed data-migration tooling, notification system, and dev-environment test runs.
-- Claude in Tray evaluation shipped (INC-1342 / INC-1421, Done, 2026-09-02).
-- Box Integration (INC-1440) and SSTK metadata-map extraction (INC-1438) shipped this week (Done, 2026-09-01).
-- New this week: a Wiz vulnerability scan surfaced 36 findings on connector-code-storage (INC-1441, Code review) — not flagged as a blocker by either source this run, but worth a follow-up check with the owner given the finding count.
-- New this week: VNTANA/Michael Kors feature-request backlog opened (INC-1323, To Do), a Lee Company iStock 12-month-terms override request (INC-1442, To Do), and a Vimeo architectural-diagrams effort scoped for Q3 2026 (INC-1337, To Do).
-- ZYNG: production test and release completed previously (INC-1403, Done); technical documentation still outstanding (INC-1404, To Do) — unchanged this week.
-- Two Michael Kors/Vntana iHub connector bugs fixed previously: duplicate asset import (INC-1433, Done) and an additional-asset failure still in code review (INC-1430) — unchanged this week.
-- Getty sync-delay bug fixed previously (INC-1436, Done).
-- Evaluating Shopify as a UCV/iHub connector (INC-1375, INC-1434, To Do) — unchanged this week.
-- New UI Update & Modernization effort for Integrations Hub kicked off previously (INC-1439, To Do) — unchanged this week.
-- Zyng MCP & Tray/Bynder research (INC-1437, To Do) and Tray reporting-feasibility research (INC-1343, In Progress) started previously — unchanged this week; a team member asked in #team-connectors this week about locating historical Tray usage data relevant to the reporting research.
+
+- **Bynder Extended Application Storage for Tray (BEAST Q3 2026, INC-1341) marked Done, 2026-09-08** — the Tray storage framework epic referenced in `Decisions.md`'s June deescalation decision.
+- Getty sync-duration bug (INC-1436) and SSTK metadata-map extraction (INC-1438) both shipped this week (Done, 2026-09-08 and 2026-09-14 respectively).
+- iStock/Webdam Client ID/Secret entry error (INC-1156) resolved (Done, 2026-09-14).
+- New work queued, all To Do: Lee Company/iStock 12-month-term override (INC-1442, 2026-09-11), FTP-via-iHub-to-Workspace research spike (INC-1443, 2026-09-10), VNTANA/Michael Kors feature requests (INC-1323, 2026-09-09).
+- Git repo configuration for agentic coding + Tray (INC-1422) in progress (2026-09-09).
+- **Slack signal this week was sparse and non-delivery-related:** #team-connectors carried only an OOO note and an internal Claude Code credit-request thread (resolved by Todd Willms approving Bill Keiffer's access request) — no status, decision, or blocker language. #b-team-integrations (shared across all three squads) carried only customer-support/partner-escalation threads relevant to Connectors' surface area (OneDrive licensing request for Rare Beauty, Roche/Torino Workflow support routing question, Coolblue metaproperty-sync-to-BigQuery failure, ING SharePoint uni-directional connector question) — none contained PM-level decision or blocker language this run.
+- #b-help-integrationshub could not be scanned — bot is not a member of the channel (`not_in_channel`), consistent with the same gap already noted in the per-feature `product-development/product/PRDs/integrations-marketplace/Status.md`.
 
 ## Blockers
-- None identified this week.
+
+- None identified from this run's Jira/Slack scan. (Note: the per-feature `product-development/product/PRDs/integrations-marketplace/Status.md` separately tracks an Electrolux CX/Omnichannel integration blocker from 2026-09-03 — that item did not surface in this run's INC board or #team-connectors/#b-team-integrations scan. This team-level file reflects only this run's 7-day source scan, per Routine 6's scope; see that file for the fuller feature-level picture.)
