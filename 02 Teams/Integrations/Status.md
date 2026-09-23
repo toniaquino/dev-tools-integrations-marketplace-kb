@@ -1,22 +1,21 @@
 # Integrations
 
-**Status:** 🟡 At risk — strong delivery this week (harnessing nearly complete, Wiz vulnerabilities fixed, UCV React 19 migration ready to merge), but the SNS webhook SignatureVersion-2 blocker carries over unresolved.
-**Last updated:** 2026-09-07
-**Last reviewed:** 2026-08-31
-**Review due:** 2026-09-14
+**Status:** 🟡 At risk — Webhooks Legacy Events Part 1 still blocked; Agentic SDK harness build progressing fast across 5 languages
+**Last updated:** 2026-09-14
+**Last reviewed:** 2026-09-14
+**Review due:** 2026-09-28
 **Owner:** Todd Willms
-**Source channels:** #api-team, #b-team-integrations
+**Source channels:** #api-team, #b-team-integrations (shared); Jira board API
 
 ## Current state
-- Harnessing initiative nearly complete: PHP and Java harness creation shipped this week (API-2777, API-2778, both Done); UCV harness investigation moved to code review (API-2759); UCV Gateway harness investigation shipped (API-2787, Done). Python harness was already done (API-2776); resumable-upload tickets (API-2770/2771/2772/2773) unchanged this week.
-- Agentic SDK OAuth endpoints shipped for both PHP and Python (API-2890, API-2885, Done).
-- Wiz-flagged high-severity vulnerabilities fixed this week: bynder-compactview-superlight (postcss CVE-2026-45623, API-2892, Done) and ucv-chrome-extension (nanoid CVE-2026-73086, API-2891, Done). The same Wiz sweep (#api-team, 2026-09-04) also flagged bynder-js-sdk and bynder-wordpress, but no corresponding Jira ticket has surfaced yet for those two.
-- UCV migration to React 19 (API-2840) is in Merge status — expected to land shortly.
-- Electrolux Compact View Smartfilters load failure (API-2746, In Progress) — FE fix deployed to stage this week per #api-team.
-- New FE bug: filter dropdown menus misalign in container display mode (API-2835, Code review).
-- New tech-debt ticket: upgrade @bynder/design-system 7.13.0 → 8.14.0 in ucv-chrome-extension, requires TypeScript 5 (API-2893, To Do).
-- Carried forward unchanged: isArchived filtering in code review (API-2352, API-2597) with an FE follow-up still to do (API-2610); SmartFilters performance improvements queued (API-2819, Backlog); GenAI Smartedit POC done (API-2854) with a related investigation still in progress (API-2741); Honeycomb tracing spike for webhooks/UCV logging still in progress (API-2823); Rabobank webhooks-UI migration (API-2852) and Integrations-team skills-repo setup (API-2887) still To Do.
-- FYI from #api-team: company-wide production deployment freeze announced for Nov 23–30 and Dec 18–Jan 3 — worth factoring into Q4 release planning for this squad.
+
+- **Agentic SDK Implementation (API-2744) harness build active across all 5 target languages.** Harness repos (Python, PHP, C#, Java) and their SDK-parity investigations all completed; JS and TypeScript harnessing also done. Initial scaffold tickets (F10 Java, F11 JS, F12 C#, F13 PHP) marked Done alongside the Python reference track (F1 monorepo scaffold, F4 OAuth base client, F8 idiomatic error mapping) — a large, mostly same-day (2026-09-14) batch of movement, worth confirming with Todd whether this reflects genuine same-week completion or a bulk Jira status sync. Asset-API "create/trash a Draft asset" work (F14, API-2768/API-2917) now In Progress; the next milestone chunk (F15 publish, F16–F20 resumable upload/retry/progress) and per-language resumable-upload rollout tickets are queued To Do.
+- **Electrolux Compact View Smartfilters (API-2746):** per the #api-team thread, backend fix deployed to production 2026-09-14 after FE/BE validation on stage this week (429-error root cause on large-taxonomy portals). **Conflict flag:** Jira still shows API-2746 as In Progress (last synced 2026-09-08, before the prod deploy) — Jira source-of-truth is stale relative to this Slack signal; treat as likely resolved pending Jira catching up.
+- Security remediation cleared this week: Wiz High findings on `bynder-sfcc` fixed via draft PR (API-2912, per #api-team 2026-09-13) — closed out the team's only open Wiz Highs on that repo; Snyk issues addressed on `python-integrations-webhooks-lib` and `bynder-wordpress` (both Done). `bynder-js-sdk` Wiz dependency bump (API-2908) shipped as part of the v2.5.8 release (2026-09-14, per GitHub notifications in #api-team), which also carried the fix for the JS-SDK opaque-TypeError bug (API-2895) reported and fixed within the same week.
+- React 19/UCV migration and Honeycomb observability build-out (tracing spans, board creation, NLS API-usage tracing) both actively In Progress this week.
+- API-2835 ([FE] filter-dropdown misalignment) flagged in #api-team as ready for stage validation ahead of Monday.
+- **Slack outside the above was routine team-ops** (weekly absence updates, an internal Claude-credit-request flow question) — no additional PM-level decisions surfaced.
 
 ## Blockers
-- SNS webhook SignatureVersion-2 (SHA-256) update is still blocked on DevOps permissions — unchanged since 2026-08-25 (source: Slack #b-team-integrations). Related tickets API-2864 and API-2889 remain To Do/Backlog in Jira, which still doesn't reflect a "blocked" state — same source conflict as the prior run, per Governance.md's priority rules (Slack wins on blockers). No new Slack activity on this thread in the last 7 days; carried forward from the 2026-08-31 baseline absent any contradicting signal.
+
+- **Webhooks Legacy Events Improvements Part 1 (API-2624):** Blocked in Jira, last touched 2026-09-10. Continues to gate Webhooks Asset Legacy Events Part 2 (API-2670) and DAT Link Generated Event (API-2534); no Slack discussion of this ticket surfaced in this week's #api-team scan.
