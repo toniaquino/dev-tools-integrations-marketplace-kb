@@ -1,12 +1,10 @@
 > ⚠️ **Overdue for human review.** Review due 2026-07-25 has passed (last reviewed 2026-06-27). Please have a human confirm this content is still accurate.
 
-> ⚠️ **Overdue for human review.** Review due 2026-07-25 has passed (last reviewed 2026-06-27). Please have a human confirm this content is still accurate.
-
 # API Extensibility
 
 **Owner:** Todd Willms
 **Status:** 🟡 Webhooks Part 1 remains blocked; Agentic SDK harness and Transformation Permissions work progressing
-**Last updated:** 2026-08-18
+**Last updated:** 2026-09-04
 **Last reviewed:** 2026-06-27
 **Review due:** 2026-07-25
 **Source channels:** #api-team, Jira API board
