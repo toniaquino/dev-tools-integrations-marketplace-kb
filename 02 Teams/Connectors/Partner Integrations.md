@@ -225,6 +225,7 @@ A third case is not an integration at all and is flagged below.
 ### Current state
 - **Contract dispute sent to Legal (as of 2026-08-19).** Direction from Dom, confirmed in discussion with Bas van Reeuwijk: pivot CI Hub from a reseller relationship to a referral partnership, and remove CI Hub from Bynder's pricelist. Framed as a commercial pivot, not a product deprecation — the integration itself may continue, but the revenue-sharing/reseller structure is going away.
 - **Referral model confirmed as the likely outcome (2026-08-21 discussion, Bas van Reeuwijk).** Bas is the PM owner for the transition.
+- **Wind-down execution underway (2026-09-03).** Ann-Michele Verheyden initiated tracking of license terms per customer to set a LinkrUI migration timeline. Bas shared the CI Hub sales spreadsheet (all orders one year from opportunity close date). Hard-to-migrate customers identified: Canva (7 customers, 213 users — no LinkrUI equivalent; options are a Canva-built integration or staying on CI Hub direct), CI Hub Drive (1 customer), PowerPoint PRO (1 customer), MS SharePoint (2 customers). Bas to update the spreadsheet for auto-renewals.
 
 ### Open items
 - [ ] Who communicates the change to CI Hub, and when
@@ -232,10 +233,13 @@ A third case is not an integration at all and is flagged below.
 - [ ] Which pricelist SKUs/line items reference CI Hub — both contract versions (reseller + referral) need gathering and pricelist implications summarized for Dom/Mark
 - [ ] Whether a referral agreement template already exists or needs to be created
 - [ ] Timeline for dispute resolution and transition execution (Mark Tenniglo / Legal)
+- [ ] Migration path for the four hard-to-migrate customer groups (Canva, CI Hub Drive, PowerPoint PRO, MS SharePoint) — no LinkrUI equivalent identified yet
+- [ ] Auto-renewal handling for CI Hub orders (spreadsheet update pending, Bas)
 
 ### Log
 - 2026-08-19 | Dom 1:1 | Contract dispute went to Legal (Mark Tenniglo). Direction: pivot to referral model to reduce commercial/legal exposure.
 - 2026-08-21 | Discussion with Bas van Reeuwijk | Referral partner relationship confirmed as the likely outcome; CI Hub to be removed from Bynder's pricelist.
+- 2026-09-03 | Toni's vault note, synced via vault-kb-drift-check | Wind-down execution begun: per-customer license tracking for LinkrUI migration timeline; four hard-to-migrate customer groups identified (Canva 7 customers/213 users, CI Hub Drive, PowerPoint PRO, MS SharePoint).
 
 ## CloudCannon
 
