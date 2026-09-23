@@ -39,7 +39,7 @@ features:
     artifacts:
       prd: "[TO COMPLETE]"
       rfc: "[TO COMPLETE]"
-      jira_epic: "MP-242 (Release Q3.1 (2026)) — Done as of 2026-07-13; next doc-migration wave epic not yet identified"
+      jira_epic: "MP-242 (Release Q3.1 (2026)) — Done as of 2026-07-13; next doc-migration wave now confirmed underway (2026-08-11 to 2026-08-13) but epic not yet identified"
       figma: "[TO COMPLETE]"
       metrics: "[TO COMPLETE]"
       confluence: "[TO COMPLETE]"
