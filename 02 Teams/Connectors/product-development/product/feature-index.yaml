@@ -180,3 +180,66 @@ features:
     owner: "Bill Keiffer"
     artifacts:
       jira_epic: "INC-1196"
+
+  - name: "Evaluation of Claude in Tray"
+    initiative: "Integrations Marketplace"
+    status: "✅ Shipped"
+    owner: "Unassigned"
+    artifacts:
+      prd: "[TO COMPLETE]"
+      rfc: "[TO COMPLETE]"
+      jira_epic: "INC-1342"
+      figma: "[TO COMPLETE]"
+      metrics: "PENDING"
+      customer_context: "[TO COMPLETE]"
+
+  # ── Q4 2026 PLANNING (opened 2026-09-15 to 2026-09-21, not yet scoped) ────────
+
+  - name: "BEAST Storage Planning"
+    initiative: "Integrations Marketplace"
+    status: "⏸ Backlog"
+    owner: "Unassigned"
+    artifacts:
+      jira_epic: "INC-1449"
+
+  - name: "BEAST Q4 2026: Stock Provider Updates"
+    initiative: "Integrations Marketplace"
+    status: "⏸ Backlog"
+    owner: "Unassigned"
+    artifacts:
+      jira_epic: "INC-1448"
+
+  - name: "Workfront Technical Architecture POC"
+    initiative: "Integrations Marketplace"
+    status: "⏸ Backlog"
+    owner: "Unassigned"
+    artifacts:
+      jira_epic: "INC-1451"
+
+  - name: "Shopify Asset Picker (Phase 1)"
+    initiative: "Integrations Marketplace"
+    status: "⏸ Backlog"
+    owner: "Unassigned"
+    artifacts:
+      jira_epic: "INC-1446"
+
+  - name: "Research options for importing via Tray"
+    initiative: "Integrations Marketplace"
+    status: "⏸ Backlog"
+    owner: "Unassigned"
+    artifacts:
+      jira_epic: "INC-1450"
+
+  - name: "Researching internal tooling (Honeycomb, Snowflake) for Integrations Reporting"
+    initiative: "Integrations Marketplace"
+    status: "⏸ Backlog"
+    owner: "Unassigned"
+    artifacts:
+      jira_epic: "INC-1452"
+
+  - name: "General Bugs & Support Q4 2026"
+    initiative: "Integrations Marketplace"
+    status: "⏸ Backlog"
+    owner: "Unassigned"
+    artifacts:
+      jira_epic: "INC-1445"
