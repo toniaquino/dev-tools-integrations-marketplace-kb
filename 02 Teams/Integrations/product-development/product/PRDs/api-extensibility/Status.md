@@ -3,23 +3,23 @@
 # API Extensibility
 
 **Owner:** Todd Willms
-**Status:** 🟡 Webhooks Part 1 remains blocked; Agentic SDK OAuth/harness work advancing, Electrolux smartfilters bug under active investigation
-**Last updated:** 2026-09-08
+**Status:** 🟡 Webhooks Part 1 remains blocked; Agentic SDK harnessing and new Asset API Integration work accelerating; Wiz security remediation nearly complete
+**Last updated:** 2026-09-15
 **Last reviewed:** 2026-06-27
 **Review due:** 2026-07-25
 **Source channels:** #api-team, Jira API board
 
 ## Current state
 
-- **Electrolux Compact View Smartfilters bug (API-2746), new (2026-09-02 to 09-04).** Root cause traced to the gateway failing to resolve `metapropertyFilters` in the GraphQL response while other fields (tags, count) return fine; BE fix owned by Alex Hong still in progress. FE graceful-fallback fix (bynder-compactview PR #618) deployed to stage 2026-09-04, pending Tony Smith verification.
-- **Wiz high-severity vulnerability sweep, new (2026-09-03 to 09-04).** New findings flagged across ucv-chrome-extension, bynder-compactview-superlight, bynder-js-sdk, and bynder-wordpress; postcss CVE (API-2892) and nanoid CVE (API-2891) fixed 2026-09-04 for the first two repos. bynder-js-sdk and bynder-wordpress remediation still pending owner follow-up (open since 2026-08-13).
-- **Agentic SDK Implementation (API-2744) progressing, new (2026-09-01 to 09-03).** PHP and Java harness set-up (API-2777, API-2778) and PHP/Python OAuth endpoint implementation (API-2890, API-2885) all completed this week — epic itself still shows Backlog in Jira, increasingly out of date given this sustained activity (also flagged last update).
-- **Engineering org move (2026-09-04).** Wesley Christelis moving to lead API/Insomnia efforts. Efrain De Los Santos backfilling as EM for integrations -- becomes Tony Smith's new day-to-day engineering counterpart. The two already work together on Connectors, so this is a natural transition.
-- React 19 migration: UCV support (API-2840) moved to Merge status 2026-09-02; Integrations Hub support and the release ticket were previously completed/in canary review as of 2026-08-17.
+- **Agentic SDK Implementation (API-2744) harnessing sprint, 2026-09-08 to 09-14.** All five language harnesses (Python, PHP, C#, Java, JS/TS) built and scaffolded, plus Python OAuth 2.0 endpoints (API-2885) shipped -- epic itself still shows Backlog in Jira despite this volume of work, extending the stale-status issue flagged last week.
+- **New work stream surfaced: Asset API Integration (API-2869), not yet in feature-index.yaml.** Resumable-upload conformance work spans Python/PHP/Java/JavaScript/TypeScript, with roughly 14 sub-features (draft asset create/trash/publish, chunked upload, retry/backoff, session persistence) and a QA pass assigned to Enver Yasar (API-2808).
+- Wiz security remediation: bynder-sfcc's last 3 open Highs cleared, PR up for review (API-2912, bynder-sfcc#10) -- 2 Snyk issues remain To Do (python-integrations-webhooks-lib, bynder-js-sdk). Parent epic API-2903 still shows Backlog in Jira despite this progress.
+- Electrolux Compact View Smartfilters bug (API-2746 / FSB-11845) still unresolved as of 2026-09-08 -- GraphQL error persists on stage ("Argument 'filter' is not defined on field 'filters'"); owner Alex Hong.
+- Two Honeycomb/UCV-telemetry epics now active in parallel -- API-2742 (tracked in feature-index) and new API-2896 "Implement Honeycomb for UCV" (untracked) -- both have Honeycomb child tasks in progress under Nikhil Potlapally; needs Todd to confirm whether these should merge or stay separate.
 
 ## Blockers
 
-- **Webhooks Legacy Events Improvements Part 1 (API-2624)**: Blocking Webhooks Asset Legacy Events Part 2 (API-2670) and DAT Link Generated Event (API-2534). Owner: assumed transferred to Efrain De Los Santos following the 2026-09-04 EM backfill (Wesley Christelis moved to API/Insomnia) -- not independently confirmed in Jira, flag for correction if wrong. Status: Blocked as of 2026-07-01, no movement this week; requires external resolution.
+- **Webhooks Legacy Events Improvements Part 1 (API-2624)**: Blocking Webhooks Asset Legacy Events Part 2 (API-2670) and DAT Link Generated Event (API-2534). Owner: assumed transferred to Efrain De Los Santos following the 2026-09-04 EM backfill (Wesley Christelis moved to API/Insomnia) -- still not independently confirmed in Jira (assignee field still empty), flag for correction if wrong. Status: Blocked; Jira record last touched 2026-09-10 with no status change; requires external resolution.
 
 ## Commercial (Internal Only)
 
