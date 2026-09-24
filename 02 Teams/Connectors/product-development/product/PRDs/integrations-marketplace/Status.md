@@ -11,6 +11,7 @@
 
 ## Current state
 
+- **Q4 KO decisions (2026-09-21, from Daily/2026-09-21 vault note, synced via vault-kb-drift-check).** Pull (Kanban) workflow confirmed as the Q4 operating model — no push. Developer portal rollout timeline: EA end of September, internal rollout Oct 2nd week, partner rollout following, GA late October/November — Toni flagged that a long runway is needed for customer and partner transitions. Open API specs GPM accountability is still unresolved; discussion rescheduled to PL 2026-09-29.
 - **Evaluation of Claude in Tray (INC-1342) closed out Done this week (2026-09-18).** Not yet tracked in `feature-index.yaml` -- see Feature launch completeness below.
 - **Q4 2026 planning wave opened this week:** seven new epics created, all To Do and not yet in `feature-index.yaml` -- BEAST Storage Planning (INC-1449), BEAST Q4 2026: Stock Provider Updates (INC-1448), Workfront Technical Architecture POC (INC-1451), Shopify Asset Picker Phase 1 (INC-1446), research into importing via Tray (INC-1450), research into internal tooling (Honeycomb, Snowflake) for Integrations Reporting (INC-1452), and General Bugs & Support Q4 2026 (INC-1445).
 - **Four customer-facing bugs resolved this week:** SSTK `external_metadataMap` timeout on large option payloads (INC-1453), ModMed Asana integration error (INC-1447), Stark State College iStock sync failure (INC-1444), Lee Company iStock 12-month term override (INC-1442).
