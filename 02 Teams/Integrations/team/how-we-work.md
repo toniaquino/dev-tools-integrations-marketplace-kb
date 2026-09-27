@@ -25,11 +25,11 @@ Examples to complete:
 ## Decision log
 
 Significant decisions are tracked in initiative Decisions.md files
-in the DISTR team KB. Squad-level decisions live in this repo's
+in the Team Vault. Squad-level decisions live in this repo's
 design/decisions/ folder.
 
-## DISTR KB connection
+## Team Vault connection
 
-This squad repo feeds the DISTR team KB weekly sync on Mondays.
-Status changes in this repo appear in the DISTR KB the following Monday.
-Initiative owner in the DISTR KB: Todd Willms (API Extensibility).
+This squad repo feeds the Team Vault weekly sync on Mondays.
+Status changes in this repo appear in the Team Vault the following Monday.
+Initiative owner in the Team Vault: Todd Willms (API Extensibility).
