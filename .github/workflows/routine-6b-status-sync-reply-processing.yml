@@ -3,10 +3,14 @@ name: Routine 6B -- weekly status sync reply processing (Pass 2)
 # NEW (2026-08-19): see routine-6-weekly-status-sync.yml's note. Runs 36h after
 # Monday's Pass 1.
 
+# DISABLED (2026-09-28): see routine-6-weekly-status-sync.yml's note -- this
+# repo's content merged into content-variations-delivery-performance-kb. Do not
+# re-enable this cron.
+
 on:
-  schedule:
-    - cron: '0 16 * * 2'  # 16:00 UTC Tuesdays -- ~36h after Monday's Pass 1
   workflow_dispatch:       # Manual trigger for testing
+  # schedule:
+  #   - cron: '0 16 * * 2'  # 16:00 UTC Tuesdays -- ~36h after Monday's Pass 1
 
 jobs:
   status-sync-pass2:

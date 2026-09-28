@@ -6,10 +6,16 @@ name: Routine A -- connectors-squad weekly synthesis
 # slot exactly; connectors-squad-kb's own routine-a-weekly-synthesis.yml is deleted
 # in the same change so there is no window where both are live.
 
+# DISABLED (2026-09-28): this repo's live content (02 Teams/Connectors) has
+# merged into content-variations-delivery-performance-kb. Cron disabled so this
+# doesn't fire against a removed path; the equivalent Routine A is being ported
+# into content-variations-delivery-performance-kb as part of the same migration
+# (Phase 2). Do not re-enable this cron.
+
 on:
-  schedule:
-    - cron: '0 7 * * 2'  # 07:00 UTC Tuesdays -- same deterministic slot connectors-squad-kb used
   workflow_dispatch:       # Manual trigger retained for testing
+  # schedule:
+  #   - cron: '0 7 * * 2'  # 07:00 UTC Tuesdays -- same deterministic slot connectors-squad-kb used
 
 jobs:
   weekly-synthesis:
