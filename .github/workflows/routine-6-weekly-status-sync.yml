@@ -7,10 +7,18 @@ name: Routine 6 -- weekly team-level status sync (Pass 1)
 # demand, simplified: no digest-manifest batching, no Todd/Bart cc logic).
 # Cadence matches content-variations-delivery-performance-kb's original slot.
 
+# DISABLED (2026-09-28): this repo's live content (02 Teams/Connectors,
+# Integrations, Technology Partners) has merged into
+# content-variations-delivery-performance-kb. Cron disabled here so this doesn't
+# fire against removed paths; content-variations-delivery-performance-kb's own
+# Routine 6 is being extended to cover these three squads as part of the same
+# migration. Manual dispatch retained for testing only. Do not re-enable this
+# cron.
+
 on:
-  schedule:
-    - cron: '0 16 * * 1'  # 16:00 UTC Mondays = 8:00 AM PT
   workflow_dispatch:       # Manual trigger for testing
+  # schedule:
+  #   - cron: '0 16 * * 1'  # 16:00 UTC Mondays = 8:00 AM PT
 
 jobs:
   weekly-status-sync:

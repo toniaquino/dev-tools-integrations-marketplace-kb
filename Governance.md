@@ -1,5 +1,13 @@
 # Governance
 
+> **RETIRED (2026-09-28):** superseded by
+> `content-variations-delivery-performance-kb/Governance.md`, which now holds the
+> current Ownership map, Channel map, and Confluence-seed detail for Connectors,
+> Integrations, and Technology Partners. See root `CLAUDE.md`'s retirement note.
+> Left below for historical reference only -- the ownership rows here (notably
+> Integrations: Todd Willms) are stale; Integrations ownership moved to Tony
+> Smith on 2026-09-28.
+
 Config source for this repo's own weekly status-sync routine (Routine 6), parsed at
 runtime. Modeled on `content-variations-delivery-performance-kb/Governance.md`'s
 Ownership map / Channel map pattern, scoped to this domain's three squads. Built

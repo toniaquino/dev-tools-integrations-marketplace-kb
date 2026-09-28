@@ -1,6 +1,19 @@
 # Dev Tools / Integrations / Marketplace Vault
 
-This is Toni's **horizontal-domain Team Vault** — the team brain for the Dev
+> **RETIRED (2026-09-28):** this repo's live content has merged into
+> `content-variations-delivery-performance-kb` (`02 Teams/Connectors`,
+> `02 Teams/Integrations`, `02 Teams/Technology Partners`). This repo was split
+> out from that one on 2026-08-09 as a horizontal/vertical domain distinction
+> agreed at the Aug 2026 onsite, but Toni owns both domains indefinitely, not on
+> an interim basis, so the split no longer served an access-control or ownership
+> purpose and only added duplicate governance/automation maintenance. This
+> repo's GitHub Actions workflows have been disabled (see each workflow file's
+> own banner); its content is left in place here as a historical snapshot
+> pending full decommission once the ported automation has run one clean cycle
+> in the merged repo (see `content-variations-delivery-performance-kb`'s
+> `Governance.md`). Do not write to anything in this repo going forward.
+
+This was Toni's **horizontal-domain Team Vault** — the team brain for the Dev
 Tools / Integrations / Marketplace domain (Tech Partners & Marketplace, Connectors,
 API Extensibility/Integrations), parallel to `content-variations-delivery-performance-kb`
 (her core Content Variations & Delivery domain). One rung below the cross-GPM
